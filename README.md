@@ -10,6 +10,8 @@
 
 ## Milestone 1
 
+Milestone 1 is available [here](milestone_1.md).
+
 ## Milestone 2
 
 ## Milestone 3
