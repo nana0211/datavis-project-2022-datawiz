@@ -2,7 +2,7 @@
 
 ## Dataset
 
-This visualization will be about the Tour de France, a bike race held once every year. It is structured as a stage race with 21 day-long stages over the course of 23 days. Each of these stages has its own classification, as if they were individual races. The time taken by each rider for each of these stages is also added up to form the general classification. This decides the race's overall winner. There are also other awards and general classifications, which are detailed on [Wikipedia](https://en.wikipedia.org/wiki/Tour_de_France#Classifications).
+This visualization will be about the Tour de France, a bike race held once every year. It is structured as a stage race with 21 day-long stages over the course of 23 days. Each of these stages has its own ranking, as if they were individual races. The time taken by each rider for each of these stages is also added up to form the general classification. This decides the race's overall winner. There are also other awards and general classifications, which are detailed on [Wikipedia](https://en.wikipedia.org/wiki/Tour_de_France#Classifications).
 
 Our data comes from two datasets. [LeTourDataSet](https://github.com/camminady/LeTourDataSet) and [TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-04-07/readme.md), which takes it's data in part from [Alastair Rushworth's github](https://github.com/alastairrushworth/tdf). They contain complementary information and can easily be joined to create the data we will use for our project.
 
