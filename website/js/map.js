@@ -1,8 +1,15 @@
-// Initialize the map
-// [50, -0.1] are the latitude and longitude
-// 4 is the zoom
-// mapid is the id of the div where the map will appear
 
+Promise.all([
+    d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectionmap.csv") // Position of circles
+  ]).then(function (initialize) {
+
+    let locations = initialize[0]
+
+    console.log(locations)
+
+
+})
+  
 var map = L
     .map('map')
     .setView([47, 2], 5);
