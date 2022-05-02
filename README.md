@@ -14,4 +14,6 @@ Milestone 1 is available [here](milestone_1.md).
 
 ## Milestone 2
 
+Milestone 2 is available [here](milestone_2.md).
+
 ## Milestone 3
