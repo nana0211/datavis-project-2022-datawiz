@@ -1,13 +1,14 @@
 # Core Visualization
-![sketch_edition](/images/sketch_edition.jpg)
-![sketch_stages](/images/sketch_stages.jpg)
 
-Our primary interest was to visualize Tour de France structurally, a famous yearly bike race, as stated in milestone one. The visualization will be presented in a map and a sidebar. Specifically, the map presents the basic geometric information (e.g., Starting Point and End Point) of all stages per year. A slider will be shown on the map to slide over the years. In addition, the map can be zoomed in for detailed information on a specific part of a route/stage.
-Moreover, zoom out to get a general overview of stages within a year. In addition to the map, we will present a sidebar on the left side of the map, and the sidebar includes detailed text information organized by two tabs (Edition and Stages). The sidebar firstly shows general information on the race for that year and general information for a stage when the user selects it on the map. The detailed core information for every year and stage includes total distance, winning information (winner, finishing time, nationality, etc.), altitude gain, and final results.
+Our primary interest was to visualize Tour de France structurally, a famous yearly bike race, as stated in milestone one. The visualization will be presented in a map and a sidebar. Specifically, the map presents the basic geometric information (e.g., Starting Point and End Point) of all stages per edition as represented in the first figure. A slider will be shown on the map to slide over the years. In addition, the map can be zoomed in for detailed information on a specific part of a route/stage.
+Moreover, zoom out to get a general overview of stages within a year. In addition to the map, we will present a sidebar on the left side of the map, and the sidebar includes detailed text information organized by two tabs (Edition and Stages). The sidebar firstly shows general information on the race for that year and general information for a stage when the user selects it on the map, as shown in image 2. The detailed core information for every year and stage includes total distance, winning information (winner, finishing time, nationality, etc.), altitude gain, and final results.
 The edition tab gives basic edition information, general classification, and who won what classification (points jersey, yellow jersey). At the same time, the stages tab lists stage information and expandable results containing a summary of position, name, team, time, and state. Users can interact with the visualization in three ways:
 1. As aforementioned, zoom in and out of the map
 2. Choose a specific year by the slider on the map or using the drop down menu in the sidebar
 3. Select a stage by clicking on the map or through the drop-down list on the stages tab.
+
+![sketch_edition](/images/sketch_edition.jpg)
+![sketch_stages](/images/sketch_stages.jpg)
 
 # Tools Used for the Core visualization
 
