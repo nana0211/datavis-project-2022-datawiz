@@ -10,12 +10,13 @@ The edition tab gives basic edition information, general classification, and who
 ![sketch_edition](/images/sketch_edition.jpg)
 ![sketch_stages](/images/sketch_stages.jpg)
 
-# Tools Used for the Core visualization
+# Tools and Lectures for the core visualisation
+For the core visualisation, we use the following tools:
+1. [Leaflet](https://leafletjs.com/) for the interactive map. We use the [leaflet-sidebar-v2](https://github.com/noerw/leaflet-sidebar-v2) plugin to add a sidebar to the map, which will be used to display additional information and to interact with the map.
+2. [d3js](https://d3js.org/)'s elements are overlaid on top of the Leaflet map. More specifically, these elements are the markers displaying the stages' endpoints, and the links between these markers.
+3. [Fontawesome](https://fontawesome.com) for icons
 
-We use following tools:
-1. [Leaflet](https://leafletjs.com/) for the map and sidebar, we start from the skeleton provided by [noerw on github](https://github.com/noerw/leaflet-sidebar-v2)
-2. [Fontawesome](https://fontawesome.com) for icons
-3. [d3js](https://d3js.org/) to display on the map
+The most important lectures for this core visualisation will be the ones on Maps and on Practical Maps, while keeping in mind the lecture on the Do's and Don'ts in Viz.
 
 # Potential Extra Visualization
 To make the visualization juicier, we proposed extra visualization. For example, we can add a progression chart for each edition, showing who is ahead at each stage. The chart could be presented on top of the map with a click. In addition, we can also offer options to compare cities, for example, which city held the most numbers of races/stages. Another interesting visualization is to color/label different stage types. For example, the ones in the mountains can be grey or with a small mountain label. Furthermore, we could add filters for users to pinpoint their interested race. For example, filters for years could be years with at least x distance, at least x stages, etc.; filters for stages could be overall editions or one edition. Finally, the map can be changed into a heat map, possibly by a button click to display all the stages' locations combined; users can see the most popular cities and the least.
