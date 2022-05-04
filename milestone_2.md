@@ -14,7 +14,8 @@ The edition tab gives basic edition information, general classification, and who
 For the core visualisation, we use the following tools:
 1. [Leaflet](https://leafletjs.com/) for the interactive map. We use the [leaflet-sidebar-v2](https://github.com/noerw/leaflet-sidebar-v2) plugin to add a sidebar to the map, which will be used to display additional information and to interact with the map.
 2. [d3js](https://d3js.org/)'s elements are overlaid on top of the Leaflet map. More specifically, these elements are the markers displaying the stages' endpoints, and the links between these markers.
-3. [Fontawesome](https://fontawesome.com) for icons
+3. [Bootstrap](https://getbootstrap.com/) to create a scrollable dropdown menu.
+4. [Fontawesome](https://fontawesome.com) for icons.
 
 The most important lectures for this core visualisation will be the ones on Maps and on Practical Maps, while keeping in mind the lecture on the Do's and Don'ts in Viz.
 
