@@ -48,21 +48,23 @@ var sidebar = L.control
 // add panels dynamically to the sidebar
 sidebar
   .addPanel({
-    id: "js-api",
-    tab: '<i class="fa fa-gear"></i>',
-    title: "JS API",
-    pane: '<p>The Javascript API allows to dynamically create or modify the panel state.<p/><p><button onclick="sidebar.enablePanel(\'mail\')">enable mails panel</button><button onclick="sidebar.disablePanel(\'mail\')">disable mails panel</button></p><p><button onclick="addUser()">add user</button></b>',
+    id: "edition",
+    tab: '<i class="fa-solid fa-g"></i><i class="fa-solid fa-c"></i>',
+    title: "Edition",
+    pane: '<p>This tab contains information on the currently selected edition.<p>',
   })
-  // add a tab with a click callback, initially disabled
   .addPanel({
-    id: "mail",
-    tab: '<i class="fa fa-envelope"></i>',
-    title: "Messages",
-    button: function () {
-      alert("opened via JS callback");
-    },
-    disabled: true,
-  });
+    id: "stages",
+    tab: '<i class="fa-solid fa-s"></i><i class="fa-solid fa-t"></i>',
+    title: "Stages",
+    pane: '<p>This tab contains information on the stages for the selected edition'
+  })
+  .addPanel({
+    id: "information",
+    tab: '<i class="fa-solid fa-circle-info"></id>',
+    title: "Information",
+    pane: '<p>Here you can find information on the Tour de France.'
+  })
 
 // be notified when a panel is opened
 sidebar.on("content", function (ev) {

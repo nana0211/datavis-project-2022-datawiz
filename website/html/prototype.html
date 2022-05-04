@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" crossorigin="" />
 
     <link rel="stylesheet" href="../css/leaflet-sidebar.css" />
@@ -36,7 +36,6 @@
             <!-- top aligned tabs -->
             <ul role="tablist">
                 <li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
-                <li><a href="#autopan" role="tab"><i class="fa fa-arrows"></i></a></li>
             </ul>
 
             <!-- bottom aligned tabs -->
@@ -55,23 +54,6 @@
 
                 <p>Welcome to the Tour de France Viz !</p>
 
-            </div>
-
-            <div class="leaflet-sidebar-pane" id="autopan">
-                <h1 class="leaflet-sidebar-header">
-                    autopan
-                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
-                </h1>
-                <p>
-                    <code>Leaflet.control.sidebar({ autopan: true })</code> makes shure that the map center always stays visible.
-                </p>
-                <p>
-                    The autopan behviour is responsive as well. Try opening and closing the sidebar from this pane!
-                </p>
-            </div>
-
-            <div class="leaflet-sidebar-pane" id="messages">
-                <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
             </div>
         </div>
     </div>
