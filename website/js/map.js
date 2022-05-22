@@ -59,12 +59,36 @@ sidebar
     title: "Stages",
     pane: '<p>This tab contains information on the stages for the selected edition'
   })
-  .addPanel({
-    id: "information",
-    tab: '<i class="fa-solid fa-circle-info"></id>',
-    title: "Information",
-    pane: '<p>Here you can find information on the Tour de France.'
-  })
+
+// add information tab
+fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/work-jonas-information-tab/website/html/information_tab.html")
+  .then(response => response.text())
+  .then((data) => {
+    sidebar.addPanel({
+      id: "information",
+      tab: '<i class="fa-solid fa-circle-info"></id>',
+      title: "Information",
+      pane: data
+    })
+  }).then(
+    () => {
+      var coll = document.getElementsByClassName("inf_tab_collapsible");
+
+      for (var i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+              } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+              }
+          });
+      };
+    }
+  )
+
+sidebar.pa
 
 // be notified when a panel is opened
 sidebar.on("content", function (ev) {
