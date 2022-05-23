@@ -39,7 +39,7 @@ sidebar
     })
 
 // add information tab
-fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/work-jonas-information-tab/website/html/information_tab.html")
+fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/information_tab.html")
   .then(response => response.text())
   .then((data) => {
     sidebar.addPanel({
