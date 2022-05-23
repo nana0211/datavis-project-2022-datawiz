@@ -18,7 +18,7 @@ Promise.all([
     var starting_year = "2010"
     fill_select(years, starting_year)
 
-    changeEdition("2010")
+    changeEdition(starting_year)
 });
 
 
