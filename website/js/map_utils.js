@@ -132,4 +132,4 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 }
 
 
-var type_to_color = { "Individual time trial": "cyan", "Flat stage": "green", "Plain stage": "green", "Stage with mountain(s)": "red", "Stage with mountain": "red", "Medium mountain stage": "red", "High mountain stage": "blue", "Mountain stage": "purple", "Flat cobblestone stage": "grey" }
+var type_to_color = { "Flat stage": "green", "Mountain stage": "purple", "Individual time trial": "cyan", "Team time trial": "aquamarine", "Hilly stage": "hotpink", "High mountain stage": "gold" }
