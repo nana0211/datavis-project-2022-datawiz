@@ -1,11 +1,3 @@
-function linkArc(d) {
-    var dx = d.target.x - d.source.x,
-        dy = d.target.y - d.source.y,
-        dr = Math.sqrt(dx * dx + dy * dy);
-    return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
-}
-
-
 function get_markers_links_and_jumps_of_year(selected_edition, stages, locations) {
 
     var markers = [];
@@ -37,7 +29,6 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
         try {
             var source = [+origins[i].long, +origins[i].lat];
             var target = [+destinations[i].long, +destinations[i].lat];
-
             var link = { source: source, target: target, type: selected_edition_stages[i].Type };
             links.push(link);
 
@@ -65,7 +56,7 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
     return [markers, links, jumps]
 }
 
-var linkGen = d3.linkVertical();
+var linkGen = d3.linkHorizontal();
 
 function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 
