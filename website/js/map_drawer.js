@@ -40,7 +40,9 @@ function update() {
         var target = map.latLngToLayerPoint(d.target);
         target = [target.x, target.y];
 
+
         return linkGen({ source: source, target: target });
+
     });
 }
 

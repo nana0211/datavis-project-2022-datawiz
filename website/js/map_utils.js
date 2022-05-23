@@ -25,12 +25,10 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
         destinations.push(destination);
     })
 
-    const used_markers = new Set();
     for (var i = 0; i < origins.length; i++) {
         try {
             var source = [+origins[i].long, +origins[i].lat];
             var target = [+destinations[i].long, +destinations[i].lat];
-
             var link = { source: source, target: target, type: selected_edition_stages[i].Type };
             links.push(link);
 
@@ -42,16 +40,12 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 
             }
 
-            if (!used_markers.has(origins[i].location)) {
-                var marker = { long: +origins[i].lat, lat: origins[i].long };
-                markers.push(marker);
-                used_markers.add(origins[i].location);
-            }
-            if (!used_markers.has(destinations[i].location)) {
-                var marker = { long: +destinations[i].lat, lat: destinations[i].long };
-                markers.push(marker);
-                used_markers.add(destinations[i].location);
-            }
+            var marker = { long: +origins[i].lat, lat: origins[i].long };
+            markers.push(marker);
+
+            var marker = { long: +destinations[i].lat, lat: destinations[i].long };
+            markers.push(marker);
+
 
         } catch (error) {
             console.log(origins[i]);
@@ -67,23 +61,6 @@ var linkGen = d3.linkHorizontal();
 function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 
     d3.select("#map").select("svg").selectAll("*").remove();
-    d3.select("#map")
-        .select("svg")
-        .selectAll("markers")
-        .data(markers)
-        .enter()
-        .append("circle")
-        .attr("cx", function(d) {
-            return map.latLngToLayerPoint([d.lat, d.long]).x;
-        })
-        .attr("cy", function(d) {
-            return map.latLngToLayerPoint([d.lat, d.long]).y;
-        })
-        .attr("r", 8)
-        .style("fill", "red")
-        .attr("stroke", "red")
-        .attr("stroke-width", 3)
-        .attr("fill-opacity", 0.4);
 
     //Draw links between locations
     d3.select("#map")
@@ -122,13 +99,68 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 
             var target = map.latLngToLayerPoint(d.target);
             target = [target.x, target.y];
-
             return linkGen({ source: source, target: target });
         })
         .attr("fill", "none")
         .attr("stroke-width", 3)
         .style("stroke-dasharray", ("3, 3"))
         .attr("stroke", "black");
+
+
+    d3.select("#map")
+        .select("svg")
+        .selectAll("markers")
+        .data(markers.slice(1, markers.length - 1))
+        .enter()
+        .append("circle")
+        .attr("cx", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).x;
+        })
+        .attr("cy", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).y;
+        })
+        .attr("r", 4)
+        .style("fill", "black")
+
+
+    d3.select("#map")
+        .select("svg")
+        .selectAll("start")
+        .data(markers.slice(0, 1))
+        .enter()
+        .append("circle")
+        .attr("cx", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).x;
+        })
+        .attr("cy", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).y;
+        })
+        .attr("r", 8)
+        .style("fill", "green")
+        .attr("stroke", "green")
+        .attr("stroke-width", 3)
+        .attr("fill-opacity", 0.4);
+
+
+    d3.select("#map")
+        .select("svg")
+        .selectAll("start")
+        .data(markers.slice(markers.length - 1, markers.length))
+        .enter()
+        .append("circle")
+        .attr("cx", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).x;
+        })
+        .attr("cy", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).y;
+        })
+        .attr("r", 8)
+        .style("fill", "red")
+        .attr("stroke", "red")
+        .attr("stroke-width", 3)
+        .attr("fill-opacity", 0.4);
+
+
 }
 
 
