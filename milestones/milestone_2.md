@@ -7,8 +7,8 @@ The edition tab gives basic edition information, general classification, and who
 2. Choose a specific year by the slider on the map or using the drop down menu in the sidebar
 3. Select a stage by clicking on the map or through the drop-down list on the stages tab.
 
-![sketch_edition](/images/sketch_edition.jpg)
-![sketch_stages](/images/sketch_stages.jpg)
+![sketch_edition](images/sketch_edition.jpg)
+![sketch_stages](images/sketch_stages.jpg)
 
 # Tools and Lectures for the core visualisation
 For the core visualisation, we use the following tools:
