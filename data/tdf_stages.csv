@@ -28,7 +28,7 @@ stage,date,distance_km,origin,destination,type,winner,winner_country,year
 6,2016-07-07,190.5,Arpajon-sur-Cère,Montauban,Flat stage,Mark Cavendish,GBR,2016
 7,2016-07-08,162.5,L'Isle-Jourdain,Lac de Payolle,Mountain stage,Steve Cummings,GBR,2016
 8,2016-07-09,184.0,Pau,Bagnères-de-Luchon,High mountain stage,Chris Froome,GBR,2016
-9,2016-07-10,184.5,Vielha Val d'Aran,Andorra-Arcalis,High mountain stage,Tom Dumoulin,NED,2016
+9,2016-07-10,184.5,Vielha Val d'Aran,Arcalis,High mountain stage,Tom Dumoulin,NED,2016
 10,2016-07-12,197.0,Escaldes-Engordany,Revel,Mountain stage,Michael Matthews,AUS,2016
 11,2016-07-13,162.5,Carcassonne,Montpellier,Flat stage,Peter Sagan,SVK,2016
 12,2016-07-14,178.0,Montpellier,Chalet Reynard,High mountain stage,Thomas De Gendt,BEL,2016
@@ -80,7 +80,7 @@ stage,date,distance_km,origin,destination,type,winner,winner_country,year
 16,2014-07-22,237.5,Carcassonne,Bagnères-de-Luchon,High mountain stage,Michael Rogers,AUS,2014
 17,2014-07-23,124.5,Saint-Gaudens,Saint-Lary Pla d’Adet,High mountain stage,Rafał Majka,POL,2014
 18,2014-07-24,145.5,Pau,Hautacam,High mountain stage,Vincenzo Nibali,ITA,2014
-19,2014-07-25,208.5,Maubourguet Pays du Val d’Adour,Bergerac,Flat stage,Ramūnas Navardauskas,LTU,2014
+19,2014-07-25,208.5,Maubourguet,Bergerac,Flat stage,Ramūnas Navardauskas,LTU,2014
 20,2014-07-26,54.0,Bergerac,Périgueux,Individual time trial,Tony Martin,GER,2014
 21,2014-07-27,137.5,Évry,Paris,Flat stage,Marcel Kittel,GER,2014
 1,2013-06-29,213.0,Porto-Vecchio,Bastia,Flat stage,Marcel Kittel,GER,2013
@@ -142,7 +142,7 @@ P,2012-06-30,6.4,Liège,Liège,Individual time trial,Fabian Cancellara,SUI,2012
 15,2011-07-17,192.5,Limoux,Montpellier,Flat stage,Mark Cavendish,GBR,2011
 16,2011-07-19,162.5,Saint-Paul-Trois-Châteaux,Gap,Mountain stage,Thor Hushovd,NOR,2011
 17,2011-07-20,179.0,Gap,Pinerolo,High mountain stage,Edvald Boasson Hagen,NOR,2011
-18,2011-07-21,200.5,Pinerolo,Col du Galibier-Serre Chevalier,High mountain stage,Andy Schleck,LUX,2011
+18,2011-07-21,200.5,Pinerolo,Serre Chevalier,High mountain stage,Andy Schleck,LUX,2011
 19,2011-07-22,109.5,Modane,Alpe d'Huez,High mountain stage,Pierre Rolland,FRA,2011
 20,2011-07-23,42.5,Grenoble,Grenoble,Individual time trial,Tony Martin,GER,2011
 21,2011-07-24,95.0,Créteil,Paris,Flat stage,Mark Cavendish,GBR,2011
@@ -173,7 +173,7 @@ P,2010-07-03,8.9,Rotterdam,Rotterdam,Individual time trial,Fabian Cancellara,SUI
 4,2009-07-07,39.0,Montpellier,Montpellier,Team time trial,Astana,,2009
 5,2009-07-08,196.5,Cap d'Agde,Perpignan,Flat stage,Thomas Voeckler,FRA,2009
 6,2009-07-09,181.5,Girona,Barcelona,Flat stage,Thor Hushovd,NOR,2009
-7,2009-07-10,224.0,Barcelona,Andorra-Arcalis,Mountain stage,Brice Feillu,FRA,2009
+7,2009-07-10,224.0,Barcelona,Arcalis,Mountain stage,Brice Feillu,FRA,2009
 8,2009-07-11,176.5,Andorra la Vella,Saint-Girons,Mountain stage,Luis León Sánchez,ESP,2009
 9,2009-07-12,160.5,Saint-Gaudens,Tarbes,Mountain stage,Pierrick Fédrigo,FRA,2009
 10,2009-07-14,194.5,Limoges,Issoudun,Flat stage,Mark Cavendish,GBR,2009
@@ -212,7 +212,7 @@ P,2010-07-03,8.9,Rotterdam,Rotterdam,Individual time trial,Fabian Cancellara,SUI
 P,2007-07-07,7.9,London,London,Individual time trial,Fabian Cancellara,SUI,2007
 1,2007-07-08,203.0,London,Canterbury,Flat stage,Robbie McEwen,AUS,2007
 2,2007-07-09,168.5,Dunkirk,Ghent,Flat stage,Gert Steegmans,BEL,2007
-3,2007-07-10,236.5,Waregem - Compiègne,Waregem - Compiègne,Flat stage,Fabian Cancellara,SUI,2007
+3,2007-07-10,236.5,Waregem,Compiègne,Flat stage,Fabian Cancellara,SUI,2007
 4,2007-07-11,193.0,Villers-Cotterêts,Joigny,Flat stage,Thor Hushovd,NOR,2007
 5,2007-07-12,182.5,Chablis,Autun,Hilly stage,Filippo Pozzato,ITA,2007
 6,2007-07-13,199.5,Semur-en-Auxois,Bourg-en-Bresse,Flat stage,Tom Boonen,BEL,2007
@@ -225,7 +225,7 @@ P,2007-07-07,7.9,London,London,Individual time trial,Fabian Cancellara,SUI,2007
 13,2007-07-21,54.0,Albi,Albi,Individual time trial,Cadel Evans[n 1],AUS,2007
 14,2007-07-22,197.0,Mazamet,Plateau-de-Beille,Mountain stage,Alberto Contador,ESP,2007
 15,2007-07-23,196.0,Foix,Loudenvielle,Mountain stage,Kim Kirchen[n 1],LUX,2007
-16,2007-07-25,218.5,Orthez,Gourette–Col d'Aubisque,Mountain stage,Michael Rasmussen,DEN,2007
+16,2007-07-25,218.5,Orthez,Gourette,Mountain stage,Michael Rasmussen,DEN,2007
 17,2007-07-26,188.5,Pau,Castelsarrasin,Hilly stage,Daniele Bennati,ITA,2007
 18,2007-07-27,211.0,Cahors,Angoulême,Flat stage,Sandy Casar,FRA,2007
 19,2007-07-28,55.5,Cognac,Angoulême,Individual time trial,Levi Leipheimer,USA,2007
@@ -430,8 +430,8 @@ P,1997-07-05,7.3,Rouen,Rouen,Individual time trial,Chris Boardman,GBR,1997
 7,1997-07-12,194.0,Marennes,Bordeaux,Flat stage,Erik Zabel,GER,1997
 8,1997-07-13,161.5,Sauternes,Pau,Flat stage,Erik Zabel,GER,1997
 9,1997-07-14,182.0,Pau,Loudenvielle,Mountain stage,Laurent Brochard,FRA,1997
-10,1997-07-15,252.5,Luchon,Andorra Arcalis,Mountain stage,Jan Ullrich,GER,1997
-11,1997-07-16,192.0,Andorra Arcalis,Perpignan,Hilly stage,Laurent Desbiens,FRA,1997
+10,1997-07-15,252.5,Luchon,Arcalis,Mountain stage,Jan Ullrich,GER,1997
+11,1997-07-16,192.0,Arcalis,Perpignan,Hilly stage,Laurent Desbiens,FRA,1997
 12,1997-07-18,55.0,Saint-Étienne,Saint-Étienne,Individual time trial,Jan Ullrich,GER,1997
 13,1997-07-19,203.5,Saint-Étienne,Alpe d'Huez,Mountain stage,Marco Pantani,ITA,1997
 14,1997-07-20,148.0,Le Bourg-d'Oisans,Courchevel,Mountain stage,Richard Virenque,FRA,1997
@@ -906,7 +906,7 @@ P,1977-06-30,5.0,Fleurance,Fleurance,Individual time trial,Dietrich Thurau,FRG,1
 15b,1977-07-17,14.0,Morzine,Avoriaz,Individual time trial,Lucien Van Impe,BEL,1977
 16,1977-07-18,121.0,Morzine,Chamonix,Mountain stage,Dietrich Thurau,FRG,1977
 17,1977-07-19,185.0,Chamonix,Alpe d'Huez,Mountain stage,Hennie Kuiper,NED,1977
-18,1977-07-20,199.0,Rossignol Voiron,Saint-Étienne,Mountain stage,no winner,,1977
+18,1977-07-20,199.0,Voiron,Saint-Étienne,Mountain stage,no winner,,1977
 19,1977-07-21,172.0,Saint-Trivier-sur-Moignans,Dijon,Flat stage,Gerrie Knetemann,NED,1977
 20,1977-07-22,50.0,Dijon,Dijon,Individual time trial,Bernard Thévenet,FRA,1977
 21,1977-07-23,142.0,Montereau-Fault-Yonne,Versailles,Flat stage,Gerrie Knetemann,NED,1977
@@ -1158,7 +1158,7 @@ P,1969-06-28,10.0,Roubaix,Roubaix,Individual time trial,Rudi Altig,GER,1969
 5b,1967-07-04,17.0,Jambes,Jambes,Team time trial,Belgium,,1967
 6,1967-07-05,238.0,Jambes,Metz,Flat stage,Herman Van Springel,BEL,1967
 7,1967-07-06,205.5,Metz,Strasbourg,Mountain stage,Michael Wright,GBR,1967
-8,1967-07-07,215.0,Strasbourg,Belfort/Ballon d’Alsace,Mountain stage,Lucien Aimar,FRA,1967
+8,1967-07-07,215.0,Strasbourg,Ballon d’Alsace,Mountain stage,Lucien Aimar,FRA,1967
 9,1967-07-09,238.5,Belfort,Divonne-les-Bains,Mountain stage,Guido Reybrouck,BEL,1967
 10,1967-07-10,243.0,Divonne-les-Bains,Briançon,Mountain stage,Felice Gimondi,ITA,1967
 11,1967-07-11,197.0,Briançon,Digne,Mountain stage,José Samyn,FRA,1967
@@ -1387,7 +1387,7 @@ P,1969-06-28,10.0,Roubaix,Roubaix,Individual time trial,Rudi Altig,GER,1969
 24,1958-07-19,320.0,Dijon,Paris,Flat stage,Pierino Baffi,ITA,1958
 1,1957-06-27,204.0,Nantes,Granville,Flat stage,André Darrigade,FRA,1957
 2,1957-06-28,226.0,Granville,Caen,Flat stage,René Privat,FRA,1957
-3a,1957-06-29,15.0,"Circuit de la Prairie, Caen","Circuit de la Prairie, Caen",Team time trial,France,,1957
+3a,1957-06-29,15.0,Caen,Caen,Team time trial,France,,1957
 3b,1957-06-29,134.0,Caen,Rouen,Flat stage,Jacques Anquetil,FRA,1957
 4,1957-06-30,232.0,Rouen,Roubaix,Flat stage,Marcel Janssens,BEL,1957
 5,1957-07-01,170.0,Roubaix,Charleroi,Flat stage,Gilbert Bauvin,FRA,1957
