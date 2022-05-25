@@ -16,34 +16,8 @@ Promise.all([
     var starting_year = "2010"
     fill_select(years, starting_year)
 
-    changeEdition("2010")
+    changeEdition(starting_year)
 });
-
-
-//On each map movement, this function is called to update the positions of the D3.js elements
-function update() {
-
-    d3.selectAll("circle")
-        .attr("cx", function(d) {
-            return map.latLngToLayerPoint([d.lat, d.long]).x;
-        })
-        .attr("cy", function(d) {
-            return map.latLngToLayerPoint([d.lat, d.long]).y;
-        });
-
-    d3.selectAll("path").attr("d", function(d) {
-        var source = map.latLngToLayerPoint(d.source);
-        source = [source.x, source.y];
-
-        var target = map.latLngToLayerPoint(d.target);
-        target = [target.x, target.y];
-
-
-        return linkGen({ source: source, target: target });
-
-    });
-}
-
 
 function changeEdition(edition_year) {
     var markers_links_jumps = get_markers_links_and_jumps_of_year(edition_year, stages, locations);

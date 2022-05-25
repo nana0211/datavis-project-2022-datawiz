@@ -1,3 +1,29 @@
+//On each map movement, this function is called to update the positions of the D3.js elements
+function update() {
+
+    d3.selectAll("circle")
+        .attr("cx", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).x;
+        })
+        .attr("cy", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).y;
+        });
+
+    d3.selectAll("path").attr("d", function(d) {
+        var source = map.latLngToLayerPoint(d.source);
+        source = [source.x, source.y];
+
+        var target = map.latLngToLayerPoint(d.target);
+        target = [target.x, target.y];
+
+
+        return linkGen({ source: source, target: target });
+
+    });
+}
+
+var selected_edition_stages;
+
 function get_markers_links_and_jumps_of_year(selected_edition, stages, locations) {
 
     var markers = [];
@@ -9,7 +35,7 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 
 
 
-    var selected_edition_stages = stages.filter(stage => {
+    selected_edition_stages = stages.filter(stage => {
         return stage.year == selected_edition;
     })
 
@@ -29,7 +55,8 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
         try {
             var source = [+origins[i].long, +origins[i].lat];
             var target = [+destinations[i].long, +destinations[i].lat];
-            var link = { source: source, target: target, type: selected_edition_stages[i].type };
+            var link = { source: source, target: target, type: selected_edition_stages[i].type, stage_id: selected_edition_stages[i].stage };
+
             links.push(link);
 
             if (i < origins.length - 1 && (destinations[i].location != origins[i + 1].locations)) {
@@ -57,6 +84,7 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 }
 
 var linkGen = d3.linkHorizontal();
+var strokeWidth = 6;
 
 function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 
@@ -78,14 +106,44 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
             return linkGen({ source: source, target: target });
         })
         .attr("fill", "none")
-        .attr("stroke-width", 3)
+        .attr("stroke-width", strokeWidth)
+        .attr("stage_id", function(d) {
+            return d.stage_id;
+        })
         .attr("stroke", function(d) {
             var color = type_to_color[d.type];
-            if (!color) {
-                console.log(d.type);
-            }
+            d3.select(this).attr("original_color", color)
             return color
-        });
+        }).attr("pointer-events", "visiblePainted")
+        .attr("class", "leaflet-interactive")
+        .attr("clicked", false)
+        .on("mouseover", function() {
+            if (d3.select(this).attr("clicked") == "false") {
+                d3.select(this).attr("stroke", pSBC(0.5, d3.select(this).attr("stroke")))
+            }
+        })
+        .on("mouseout", function() {
+            if (d3.select(this).attr("clicked") == "false") {
+                d3.select(this).attr("stroke", d3.select(this).attr("original_color"))
+            }
+
+        })
+        .on("click", function() {
+            d3.selectAll("path").attr("stroke", function() {
+                var color = d3.select(this).attr("original_color")
+                if (color) {
+                    return color
+                }
+                return "black"
+            }).attr("clicked", false)
+            d3.select(this).attr("clicked", true)
+            d3.select(this).attr("stroke", pSBC(0.5, d3.select(this).attr("stroke")))
+            sidebar.open("stages")
+            selected_stage = selected_edition_stages.filter(stage => {
+                return stage.stage == d3.select(this).attr("stage_id");
+            })[0]
+            $("#stages_pane").html(JSON.stringify(selected_stage))
+        })
 
 
     d3.select("#map")
@@ -102,9 +160,9 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
             return linkGen({ source: source, target: target });
         })
         .attr("fill", "none")
-        .attr("stroke-width", 3)
+        .attr("stroke-width", strokeWidth)
         .style("stroke-dasharray", ("3, 3"))
-        .attr("stroke", "black");
+        .attr("stroke", "black")
 
 
     d3.select("#map")
@@ -139,7 +197,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
         .style("fill", "green")
         .attr("stroke", "green")
         .attr("stroke-width", 3)
-        .attr("fill-opacity", 0.4);
+        .attr("fill-opacity", 0.4)
 
 
     d3.select("#map")
@@ -158,10 +216,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
         .style("fill", "red")
         .attr("stroke", "red")
         .attr("stroke-width", 3)
-        .attr("fill-opacity", 0.4);
-
-
+        .attr("fill-opacity", 0.4)
 }
 
-
-var type_to_color = { "Flat stage": "green", "Mountain stage": "purple", "Individual time trial": "cyan", "Team time trial": "aquamarine", "Hilly stage": "hotpink", "High mountain stage": "gold" }
+var type_to_color = { "Flat stage": "#03C700", "Mountain stage": "#5d00c7", "Individual time trial": "#00b3c7", "Team time trial": "#007bc7", "Hilly stage": "#b300c7", "High mountain stage": "#c79c00" }
