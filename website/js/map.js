@@ -27,15 +27,15 @@ var sidebar = L.control
 sidebar
     .addPanel({
         id: "edition",
-        tab: '<i class="fa-solid fa-g"></i><i class="fa-solid fa-c"></i>',
+        tab: '📅',
         title: "Edition",
-        pane: '<p>This tab contains information on the currently selected edition.<p>',
+        pane: '<p style="padding-top: 1em;">This tab allows for edition selection and contains information on the currently selected edition.</p>',
     })
     .addPanel({
         id: "stages",
-        tab: '<i class="fa-solid fa-s"></i><i class="fa-solid fa-t"></i>',
+        tab: '🏁',
         title: "Stages",
-        pane: '<div id="stages_pane"></div>'
+        pane: '<p style="padding-top: 1em;">This tab allows for stage selection, depending on the currently selected edition, and contains information on the currently selected stage.</p>'
     })
 
 // add information tab
@@ -44,8 +44,8 @@ fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-proj
     .then((data) => {
         sidebar.addPanel({
             id: "information",
-            tab: '<i class="fa-solid fa-circle-info"></id>',
-            title: "Information 🚴‍♂️🚴‍♀️  🚴🚴‍♀️🚴‍♀️🚴‍♂️🚴🚴",
+            tab: 'ℹ️',
+            title: "Information",
             pane: data
         })
     }).then(
