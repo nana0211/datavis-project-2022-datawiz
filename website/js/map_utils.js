@@ -16,11 +16,11 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 
     selected_edition_stages.forEach(element => {
         var origin = locations.filter(location => {
-            return location.location == element.Origin
+            return location.location == element.origin
         })[0]
         origins.push(origin)
         var destination = locations.filter(location => {
-            return location.location == element.Destination
+            return location.location == element.destination
         })[0]
         destinations.push(destination);
     })
@@ -29,7 +29,7 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
         try {
             var source = [+origins[i].long, +origins[i].lat];
             var target = [+destinations[i].long, +destinations[i].lat];
-            var link = { source: source, target: target, type: selected_edition_stages[i].Type };
+            var link = { source: source, target: target, type: selected_edition_stages[i].type };
             links.push(link);
 
             if (i < origins.length - 1 && (destinations[i].location != origins[i + 1].locations)) {

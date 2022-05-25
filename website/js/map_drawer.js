@@ -10,9 +10,7 @@ Promise.all([
 
     const years = new Set()
     stages.forEach(stage => {
-        var year = (stage.Date.slice(0, 4));
-        stage.year = year;
-        years.add(year);
+        years.add(stage.year);
     });
 
     var starting_year = "2010"
