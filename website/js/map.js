@@ -45,7 +45,7 @@ fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-proj
         sidebar.addPanel({
             id: "information",
             tab: '<i class="fa-solid fa-circle-info"></id>',
-            title: "Information",
+            title: "Information 🚴‍♂️🚴‍♀️  🚴🚴‍♀️🚴‍♀️🚴‍♂️🚴🚴",
             pane: data
         })
     }).then(
