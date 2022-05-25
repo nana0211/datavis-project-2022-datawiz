@@ -1,3 +1,29 @@
+//On each map movement, this function is called to update the positions of the D3.js elements
+function update() {
+
+    d3.selectAll("circle")
+        .attr("cx", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).x;
+        })
+        .attr("cy", function(d) {
+            return map.latLngToLayerPoint([d.lat, d.long]).y;
+        });
+
+    d3.selectAll("path").attr("d", function(d) {
+        var source = map.latLngToLayerPoint(d.source);
+        source = [source.x, source.y];
+
+        var target = map.latLngToLayerPoint(d.target);
+        target = [target.x, target.y];
+
+
+        return linkGen({ source: source, target: target });
+
+    });
+}
+
+var selected_edition_stages;
+
 function get_markers_links_and_jumps_of_year(selected_edition, stages, locations) {
 
     var markers = [];
@@ -9,18 +35,18 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 
 
 
-    var selected_edition_stages = stages.filter(stage => {
+    selected_edition_stages = stages.filter(stage => {
         return stage.year == selected_edition;
     })
 
 
     selected_edition_stages.forEach(element => {
         var origin = locations.filter(location => {
-            return location.location == element.Origin
+            return location.location == element.origin
         })[0]
         origins.push(origin)
         var destination = locations.filter(location => {
-            return location.location == element.Destination
+            return location.location == element.destination
         })[0]
         destinations.push(destination);
     })
@@ -29,7 +55,8 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
         try {
             var source = [+origins[i].long, +origins[i].lat];
             var target = [+destinations[i].long, +destinations[i].lat];
-            var link = { source: source, target: target, type: selected_edition_stages[i].Type, stage_id: selected_edition_stages[i].Id };
+            var link = { source: source, target: target, type: selected_edition_stages[i].type, stage_id: selected_edition_stages[i].stage };
+
             links.push(link);
 
             if (i < origins.length - 1 && (destinations[i].location != origins[i + 1].locations)) {
@@ -57,6 +84,7 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 }
 
 var linkGen = d3.linkHorizontal();
+var strokeWidth = 6;
 
 function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 
@@ -78,7 +106,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
             return linkGen({ source: source, target: target });
         })
         .attr("fill", "none")
-        .attr("stroke-width", 4)
+        .attr("stroke-width", strokeWidth)
         .attr("stage_id", function(d) {
             return d.stage_id;
         })
@@ -91,7 +119,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
         .attr("clicked", false)
         .on("mouseover", function() {
             if (d3.select(this).attr("clicked") == "false") {
-                d3.select(this).attr("stroke", pSBC(0.4, d3.select(this).attr("stroke")))
+                d3.select(this).attr("stroke", pSBC(0.5, d3.select(this).attr("stroke")))
             }
         })
         .on("mouseout", function() {
@@ -100,7 +128,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
             }
 
         })
-        .on("click", function(d) {
+        .on("click", function() {
             d3.selectAll("path").attr("stroke", function() {
                 var color = d3.select(this).attr("original_color")
                 if (color) {
@@ -109,10 +137,10 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
                 return "black"
             }).attr("clicked", false)
             d3.select(this).attr("clicked", true)
-            d3.select(this).attr("stroke", pSBC(0.4, d3.select(this).attr("stroke")))
+            d3.select(this).attr("stroke", pSBC(0.5, d3.select(this).attr("stroke")))
             sidebar.open("stages")
-            selected_stage = stages.filter(stage => {
-                return stage.Id == d3.select(this).attr("stage_id");
+            selected_stage = selected_edition_stages.filter(stage => {
+                return stage.stage == d3.select(this).attr("stage_id");
             })[0]
             $("#stages_pane").html(JSON.stringify(selected_stage))
         })
@@ -132,7 +160,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
             return linkGen({ source: source, target: target });
         })
         .attr("fill", "none")
-        .attr("stroke-width", 4)
+        .attr("stroke-width", strokeWidth)
         .style("stroke-dasharray", ("3, 3"))
         .attr("stroke", "black")
 
