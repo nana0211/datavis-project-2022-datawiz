@@ -254,7 +254,7 @@ Dinan,"(-2.047687, 48.4539775)",France,-2.047687,48.4539775,France
 Limoux,"(2.2176533, 43.0538068)",France,2.2176533,43.0538068,France
 Guéret,"(1.8713349, 46.1686865)",France,1.8713349,46.1686865,France
 Moûtiers,"(6.5340061, 45.4849883)",France,6.5340061,45.4849883,France
-West Berlin,"(13.1667, 52.5333)",Deutschland,52.5333,13.1667,Germany
+West Berlin,"(13.1667, 52.5333)",Deutschland,13.1667,52.5333,Germany
 Pamiers,"(1.6082177, 43.1147515)",France,1.6082177,43.1147515,France
 Cap d'Agde,"(3.5117752, 43.2845374)",France,3.5117752,43.2845374,France
 Saint-Émilion,"(-0.1560662, 44.8931452)",France,-0.1560662,44.8931452,France
@@ -346,7 +346,7 @@ Le Puy-en-Velay,"(3.8855537, 45.0459739)",France,3.8855537,45.0459739,France
 Royan,"(-1.0287636, 45.6245332)",France,-1.0287636,45.6245332,France
 Charleroi,"(4.4436244, 50.4120332)",België / Belgique / Belgien,4.4436244,50.4120332,Belgium
 Sète,"(3.6959771, 43.4014434)",France,3.6959771,43.4014434,France
-Les Essarts,"(0.992120772111302, 48.880997)",France,0.992120772111302,48.880997,France
+Les Essarts,"(-1.2269, 46.7744)",France,-1.2269,46.7744,France
 Annecy,"(6.1288847, 45.8992348)",France,6.1288847,45.8992348,France
 Modane,"(6.6728169, 45.2015369)",France,6.6728169,45.2015369,France
 Bastia,"(9.4512866, 42.7008676)",France,9.4512866,42.7008676,France
@@ -437,6 +437,7 @@ Valkenburg,"(5.8312518, 50.8647531)",Nederland,5.8312518,50.8647531,Netherlands
 Porrentruy,"(7.0761342, 47.4171297)",Schweiz/Suisse/Svizzera/Svizra,7.0761342,47.4171297,Switzerland
 Sint-Pieters-Woluwe,"(4.4274636, 50.8370253)",België / Belgique / Belgien,4.4274636,50.8370253,Belgium
 Saint-Lô,"(-1.0906637, 49.1157004)",France,-1.0906637,49.1157004,France
+Bonneval-sur-Arc,"(7.0472, 45.3722)",France,7.0472,45.3722,France
 Bonneval,"(1.38405046801574, 48.17890365)",France,1.38405046801574,48.17890365,France
 Soissons,"(3.327613, 49.3837621)",France,3.327613,49.3837621,France
 Salies-de-Béarn,"(-0.9234025, 43.4703515)",France,-0.9234025,43.4703515,France
@@ -553,7 +554,7 @@ Val d'Isère,"(6.9804421, 45.4498666)",France,6.9804421,45.4498666,France
 Lyon,"(4.8320114, 45.7578137)",France,4.8320114,45.7578137,France
 Lézat-sur-Lèze,"(1.34623, 43.2773)",France,1.34623,43.2773,France
 Chaumeil,"(1.8808583, 45.4555541)",France,1.8808583,45.4555541,France
-Besse,"(6.16986, 45.0714767)",France,6.16986,45.0714767,France
+Besse,"(2.8646104, 45.5028467)",France,2.8646104,45.5028467,France
 Pamplona,"(-1.6442556, 42.8184538)",España,-1.6442556,42.8184538,Spain
 Aubagne,"(5.5703031, 43.2924385)",France,5.5703031,43.2924385,France
 Narbonne,"(3.0042121, 43.1837661)",France,3.0042121,43.1837661,France
@@ -571,7 +572,7 @@ Saint-Dizier,"(4.9473513, 48.6371125)",France,4.9473513,48.6371125,France
 Issoire,"(3.24498407375965, 45.54420155)",France,3.24498407375965,45.54420155,France
 Lavelanet,"(1.8487179, 42.9332121)",France,1.8487179,42.9332121,France
 Noirmoutier-en-l'Île,"(-2.2441449, 47.000089)",France,-2.2441449,47.000089,France
-Saint-Raphaël,"(1.0747165, 45.3043079)",France,1.0747165,45.3043079,France
+Saint-Raphaël,"(6.7684, 43.4252)",France,6.7684,43.4252,France
 Villié-Morgon,"(4.6812724, 46.1612385)",France,4.6812724,46.1612385,France
 Marseille,"(5.3699525, 43.2961743)",France,5.3699525,43.2961743,France
 Nemours,"(2.6953079, 48.268026)",France,2.6953079,48.268026,France
