@@ -23,33 +23,32 @@ var sidebar = L.control
     .addTo(map)
     .open("home");
 
-// add panels dynamically to the sidebar
-sidebar.addPanel({
-    id: "edition",
-    tab: '<i class="fa-solid fa-g"></i><i class="fa-solid fa-c"></i>',
-    title: "Edition",
-    pane: '<p>This tab contains information on the currently selected edition.<p>',
-})
-
-
-
+// add editions tab
+sidebar
+    .addPanel({
+        id: "edition",
+        tab: '📅',
+        title: "Edition",
+        pane: '<p style="padding-top: 1em;">This tab allows for edition selection and contains information on the currently selected edition.</p><div class="container py-4"><select id="edition_select" class="form-select" aria-label="Default select example"></select></div>',
+    })
+// add stages tab
 fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/winner_tables/website/html/stage_tab.html")
     .then(response => response.text())
     .then((data) => {
         sidebar.addPanel({
             id: "stages",
-            tab: '<i class="fa-solid fa-s"></i><i class="fa-solid fa-t"></i>',
+            tab: '🏁',
             title: "Stages",
             pane: data
         })
     })
-    // add information tab
+// add information tab
 fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/information_tab.html")
     .then(response => response.text())
     .then((data) => {
         sidebar.addPanel({
             id: "information",
-            tab: '<i class="fa-solid fa-circle-info"></id>',
+            tab: 'ℹ️',
             title: "Information",
             pane: data
         })

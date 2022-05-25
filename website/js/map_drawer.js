@@ -16,7 +16,7 @@ Promise.all([
         years.add(stage.year);
     });
 
-    var starting_year = "2010"
+    var starting_year = "2017"
     fill_select(years, starting_year)
 
     changeEdition(starting_year)
