@@ -76,13 +76,14 @@ Guzet-Neige,"(1.3020896, 42.7791077)",France,1.3020896,42.7791077,France
 Tournus,"(4.9122425, 46.5617373)",France,4.9122425,46.5617373,France
 Salon-de-Provence,"(5.07190137992693, 43.64216755)",France,5.07190137992693,43.64216755,France
 Harrogate,"(-1.5391039, 53.9921491)",United Kingdom,-1.5391039,53.9921491,United Kingdom
+Rochefort (Belgium),"(5.217, 50.17)",België / Belgique / Belgien,5.217,50.17,Belgium
 Rochefort,"(-0.9687519, 45.9438412)",France,-0.9687519,45.9438412,France
 Forges-les-Eaux,"(1.53515162115986, 49.61296845)",France,1.53515162115986,49.61296845,France
 Tonnerre,"(3.9733033, 47.8564662)",France,3.9733033,47.8564662,France
 Super-Besse Sancy,"(2.8646104, 45.5028467)",France,2.8646104,45.5028467,France
 Saarlouis,"(6.749846, 49.3164661)",Deutschland,6.749846,49.3164661,Germany
 Nogent-sur-Marne,"(2.4917292, 48.8388009)",France,2.4917292,48.8388009,France
-Castres,"(3.2383333, 49.8044444)",France,3.2383333,49.8044444,France
+Castres,"(2.25, 43.6)",France,2.25,43.6,France
 La Châtre,"(1.9892292, 46.5815678)",France,1.9892292,46.5815678,France
 La Ferté-sous-Jouarre,"(3.1294221, 48.9500674)",France,3.1294221,48.9500674,France
 Beauvais,"(2.0823355, 49.4300997)",France,2.0823355,49.4300997,France
@@ -129,9 +130,9 @@ Hasselt,"(5.3378043, 50.9303735)",België / Belgique / Belgien,5.3378043,50.9303
 Briançon,"(6.6436313, 44.8984037)",France,6.6436313,44.8984037,France
 Saint-Gaudens,"(0.7247218, 43.1077682)",France,0.7247218,43.1077682,France
 Avignon,"(4.8059012, 43.9492493)",France,4.8059012,43.9492493,France
-Hautacam,"(-0.9912775, 46.8466377)",France,-0.9912775,46.8466377,France
+Hautacam,"(-0.00805, 42.972)",France,-0.00805,42.972,France
 Mondorf-les-Bains,"(6.2814238, 49.5071747)",Lëtzebuerg,6.2814238,49.5071747,Luxembourg
-Lugny,"(3.8087528, 49.7816658)",France,3.8087528,49.7816658,France
+Lugny,"(4.8103, 46.4733)",France,4.8103,46.4733,France
 La Haie-Fouassière,"(-1.4000716, 47.1546806)",France,-1.4000716,47.1546806,France
 Saintes,"(-0.6300671, 45.7460663)",France,-0.6300671,45.7460663,France
 Wasquehal,"(3.1312447, 50.6691577)",France,3.1312447,50.6691577,France
@@ -149,7 +150,7 @@ Château-Thierry,"(3.4027111, 49.0457362)",France,3.4027111,49.0457362,France
 Montbéliard,"(6.7977564, 47.5102368)",France,6.7977564,47.5102368,France
 Autrans,"(5.56091207456353, 45.19969585)",France,5.56091207456353,45.19969585,France
 Angers,"(-0.5515588, 47.4739884)",France,-0.5515588,47.4739884,France
-Merlin-Plage,"(1.5738494, 50.6766469)",France,1.5738494,50.6766469,France
+Merlin-Plage,"(-1.9442, 46.7219)",France,-1.9442,46.7219,France
 Chantonnay,"(-1.0505509, 46.6868121)",France,-1.0505509,46.6868121,France
 Sauternes,"(-0.341386, 44.5327805)",France,-0.341386,44.5327805,France
 Bazas,"(-0.2126009, 44.4320456)",France,-0.2126009,44.4320456,France
@@ -158,7 +159,7 @@ San Sebastián,"(-1.9838889, 43.3224219)",España,-1.9838889,43.3224219,Spain
 Redon,"(-2.0842143, 47.6510682)",France,-2.0842143,47.6510682,France
 Freiburg,"(7.8494005, 47.9960901)",Deutschland,7.8494005,47.9960901,Germany
 La Mure,"(5.7871983, 44.9038429)",France,5.7871983,44.9038429,France
-Antony/Parc de Sceaux,"(2.29809249739558, 48.7693698)",France,2.29809249739558,48.7693698,France
+Sceaux,"(2.29809249739558, 48.7693698)",France,2.29809249739558,48.7693698,France
 Caen,"(-0.3635615, 49.1813403)",France,-0.3635615,49.1813403,France
 Agen,"(0.6176112, 44.2015827)",France,0.6176112,44.2015827,France
 Valentigney,"(6.8308784, 47.4622925)",France,6.8308784,47.4622925,France
@@ -190,7 +191,7 @@ Montjuïc circuit,"(2.1582485, 41.3642113)",España,2.1582485,41.3642113,Spain
 Pinerolo,"(7.3319454, 44.8873086)",Italia,7.3319454,44.8873086,Italy
 Fleurance,"(0.6640617, 43.849295)",France,0.6640617,43.849295,France
 Prato Nevoso,"(7.7855885, 44.2552915)",Italia,7.7855885,44.2552915,Italy
-Moutiers,"(5.9669258, 49.2332157)",France,5.9669258,49.2332157,France
+Moutiers,"(6.5344, 45.4858)",France,6.5344,45.4858,France
 Lac de Vassivière,"(1.90050954202695, 45.7980081)",France,1.90050954202695,45.7980081,France
 Karlsruhe,"(8.4034195, 49.0068705)",Deutschland,8.4034195,49.0068705,Germany
 Biarritz,"(-1.5592776, 43.4832523)",France,-1.5592776,43.4832523,France
@@ -215,7 +216,7 @@ Utrecht,"(5.12768396945229, 52.0809856)",Nederland,5.12768396945229,52.0809856,N
 Hendaye,"(-1.7616499, 43.3641518)",France,-1.7616499,43.3641518,France
 La Défense,"(2.2412078, 48.891008)",France,2.2412078,48.891008,France
 Montélimar,"(4.750318, 44.5579391)",France,4.750318,44.5579391,France
-Alpe d'Huez,"(9.5957767, 56.1305266)",Danmark,9.5957767,56.1305266,Danemark
+Alpe d'Huez,"(6.071389, 45.060278)",France,6.071389,45.060278,France
 Argentan,"(-0.0223695, 48.7428859)",France,-0.0223695,48.7428859,France
 Evreux,"(1.1510164, 49.0268903)",France,1.1510164,49.0268903,France
 Besse-en-Chandesse,"(2.9329614, 45.5115738)",France,2.9329614,45.5115738,France
@@ -248,12 +249,12 @@ Périgueux,"(0.7184407, 45.1909365)",France,0.7184407,45.1909365,France
 Figeac,"(2.0324321, 44.6092335)",France,2.0324321,44.6092335,France
 Saint-Pourçain-sur-Sioule,"(3.2899107, 46.3074423)",France,3.2899107,46.3074423,France
 Argelès-Gazost,"(-0.0997681, 43.00511)",France,-0.0997681,43.00511,France
-Valence,"(-0.3763353, 39.4697065)",España,-0.3763353,39.4697065,Spain
+Valence,"(4.8917,44.9333)",France,4.8917,44.9333,France
 Dinan,"(-2.047687, 48.4539775)",France,-2.047687,48.4539775,France
 Limoux,"(2.2176533, 43.0538068)",France,2.2176533,43.0538068,France
 Guéret,"(1.8713349, 46.1686865)",France,1.8713349,46.1686865,France
 Moûtiers,"(6.5340061, 45.4849883)",France,6.5340061,45.4849883,France
-West Berlin,"(-64.5827869, 44.0742673)",Canada,-64.5827869,44.0742673,Canada
+West Berlin,"(13.1667, 52.5333)",Deutschland,52.5333,13.1667,Germany
 Pamiers,"(1.6082177, 43.1147515)",France,1.6082177,43.1147515,France
 Cap d'Agde,"(3.5117752, 43.2845374)",France,3.5117752,43.2845374,France
 Saint-Émilion,"(-0.1560662, 44.8931452)",France,-0.1560662,44.8931452,France
@@ -293,7 +294,7 @@ Châteauroux,"(1.6770956, 46.8203785)",France,1.6770956,46.8203785,France
 Lézignan-Corbières,"(2.7574981, 43.2008841)",France,2.7574981,43.2008841,France
 Belfort,"(6.8628942, 47.6379599)",France,6.8628942,47.6379599,France
 Roanne,"(4.0729178, 46.0345572)",France,4.0729178,46.0345572,France
-La Mongie,"(-1.3330366, 47.0306867)",France,-1.3330366,47.0306867,France
+La Mongie,"(0.1792, 42.91)",France,0.1792,42.91,France
 Saint-Léonard-de-Noblat,"(1.4924586, 45.8377349)",France,1.4924586,45.8377349,France
 Voiron,"(5.5910751, 45.3631386)",France,5.5910751,45.3631386,France
 Dax,"(-1.0518771, 43.7084065)",France,-1.0518771,43.7084065,France
@@ -305,11 +306,11 @@ Plateau de Bonascre,"(1.8154193, 42.7014614)",France,1.8154193,42.7014614,France
 Carpentras,"(5.0487681, 44.0554043)",France,5.0487681,44.0554043,France
 Wanze,"(5.2143865, 50.5368559)",België / Belgique / Belgien,5.2143865,50.5368559,Belgium
 Évian-les-Bains,"(6.58133104180146, 46.3910965)",France,6.58133104180146,46.3910965,France
-Montaigu,"(3.83264, 49.535)",France,3.83264,49.535,France
+Montaigu,"(-1.3086, 46.9736)",France,-1.3086,46.9736,France
 Toulouse,"(1.4442469, 43.6044622)",France,1.4442469,43.6044622,France
 Valloire,"(6.4290103, 45.165058)",France,6.4290103,45.165058,France
 Troyes,"(4.0746257, 48.2971626)",France,4.0746257,48.2971626,France
-Méribel,"(45.3967, 6.566)",France,45.3967,6.566,France
+Méribel,"(45.3967, 6.566)",France,6.5663,45.3967,France
 Embrun,"(6.4958189, 44.5641764)",France,6.4958189,44.5641764,France
 Courchevel,"(6.6349892, 45.4140984)",France,6.6349892,45.4140984,France
 Chalon-sur-Saône,"(4.8529605, 46.7888997)",France,4.8529605,46.7888997,France
@@ -367,7 +368,7 @@ Grenoble,"(5.7357819, 45.1875602)",France,5.7357819,45.1875602,France
 Mâcon,"(4.8322266, 46.3036683)",France,4.8322266,46.3036683,France
 Val-Louron,"(0.3899518, 42.791965)",France,0.3899518,42.791965,France
 La Toussuire-Les Sybelles,"(6.25430299891701, 45.2637202)",France,6.25430299891701,45.2637202,France
-Waterloo,"(-92.3328743, 42.498275)",United States,-92.3328743,42.498275,United States
+Waterloo,"(4.3979, 50.7175)",België / Belgique / Belgien,4.3979,50.7175,Belgium
 Maastricht,"(5.6909768, 50.8512438)",Nederland,5.6909768,50.8512438,Netherlands
 Ax-les-Thermes,"(1.8379765, 42.7193597)",France,1.8379765,42.7193597,France
 Huy,"(5.2408138, 50.5180856)",België / Belgique / Belgien,5.2408138,50.5180856,Belgium
@@ -500,7 +501,6 @@ Le Grand-Bornand,"(6.4271457, 45.9418675)",France,6.4271457,45.9418675,France
 Moirans-en-Montagne,"(5.7255731, 46.431063)",France,5.7255731,46.431063,France
 Laissac-Sévérac-l'Église,"(2.83870503079627, 44.36917755)",France,2.83870503079627,44.36917755,France
 Plymouth,"(-4.1425658, 50.3712659)",United Kingdom,-4.1425658,50.3712659,United Kingdom
-Sceaux,"(4.02184485805033, 47.5147285)",France,4.02184485805033,47.5147285,France
 Mont-de-Marsan,"(-0.500972, 43.8911318)",France,-0.500972,43.8911318,France
 Dublin,"(-6.2602732, 53.3497645)",Éire / Ireland,-6.2602732,53.3497645,Ireland
 Auch,"(0.5850507, 43.6463558)",France,0.5850507,43.6463558,France
@@ -512,7 +512,7 @@ Saint-Hilaire-du-Harcouët,"(-1.08546177886541, 48.5714837)",France,-1.085461778
 Toulon,"(5.9304919, 43.1257311)",France,5.9304919,43.1257311,France
 Aubenas,"(4.39758793498088, 44.61059285)",France,4.39758793498088,44.61059285,France
 Cluses,"(6.5804218, 46.0603171)",France,6.5804218,46.0603171,France
-Pont l'Evêque,"(2.9880799, 49.5643305)",France,2.9880799,49.5643305,France
+Pont l'Evêque,"(0.1847, 49.2864)",France,0.1847,49.2864,France
 Commercy,"(5.5914753, 48.763203)",France,5.5914753,48.763203,France
 Nice,"(7.2683912, 43.7009358)",France,7.2683912,43.7009358,France
 Barcelona ,"(2.1774322, 41.3828939)",España,2.1774322,41.3828939,Spain
@@ -531,16 +531,16 @@ Bourg-Madame,"(1.9434203, 42.4347431)",France,1.9434203,42.4347431,France
 Renazé,"(-1.0557842, 47.793333)",France,-1.0557842,47.793333,France
 Mons,"(3.951958, 50.4549568)",België / Belgique / Belgien,3.951958,50.4549568,Belgium
 Créteil,"(2.4530731, 48.7771486)",France,2.4530731,48.7771486,France
-Felsberg,"(9.477555, 46.8460537)",Schweiz/Suisse/Svizzera/Svizra,9.477555,46.8460537,Switzerland
+Felsberg,"(6.7, 49.25)",Deutschland,6.7,49.25,Germany
 Circuit Zolder,"(5.25766569742688, 50.99023695)",België / Belgique / Belgien,5.25766569742688,50.99023695,Belgium
 Aurillac,"(2.4433101, 44.9285441)",France,2.4433101,44.9285441,France
 Corbeil-Essonnes,"(2.4818087, 48.6137734)",France,2.4818087,48.6137734,France
-Martigny,"(4.1375, 49.8597222)",France,4.1375,49.8597222,France
+Martigny,"(7.07, 46.1)",Schweiz/Suisse/Svizzera/Svizra,7.07,46.1,Switzerland
 Fromentine,"(-2.1366623, 46.8896706)",France,-2.1366623,46.8896706,France
 Limoges,"(1.2644847, 45.8354243)",France,1.2644847,45.8354243,France
 Saint-Julien-en-Genevois,"(6.0812467, 46.1444789)",France,6.0812467,46.1444789,France
 Draguignan,"(6.4627333, 43.5374662)",France,6.4627333,43.5374662,France
-Brive,"(5.7977896, 46.3738887)",France,5.7977896,46.3738887,France
+Brive,"(1.5321, 45.1583)",France,1.5321,45.1583,France
 Champagnole,"(5.9083581, 46.7456049)",France,5.9083581,46.7456049,France
 Montpellier,"(3.8767337, 43.6112422)",France,3.8767337,43.6112422,France
  Brighton,"(-0.12693017575934, 50.8389149)",United Kingdom,-0.12693017575934,50.8389149,United Kingdom
@@ -586,7 +586,7 @@ Armentières,"(2.882169, 50.6867281)",France,2.882169,50.6867281,France
 Dieppe,"(1.0791444, 49.9246182)",France,1.0791444,49.9246182,France
 Altkirch ,"(7.2401542, 47.6238204)",France,7.2401542,47.6238204,France
 Finhaut-Émosson,"(6.9358956, 46.0683065)",Schweiz/Suisse/Svizzera/Svizra,6.9358956,46.0683065,Switzerland
-Ales,"(8.815632, 39.768245)",Italia,8.815632,39.768245,Italy
+Ales,"(4.0817, 44.1281)",France,4.0817,44.1281,France
 Castillon-la-Bataille,"(-0.0450873, 44.8533324)",France,-0.0450873,44.8533324,France
 Dunkirk,"(2.3772525, 51.0347708)",France,2.3772525,51.0347708,France
 Foix,"(1.6053807, 42.9638998)",France,1.6053807,42.9638998,France
@@ -644,7 +644,6 @@ Düsseldorf,"(6.7763137, 51.2254018)",Deutschland,6.7763137,51.2254018,Germany
 Vouvray,"(0.7998446, 47.4136687)",France,0.7998446,47.4136687,France
 Semnoz,"(6.1044437, 45.8843289)",France,6.1044437,45.8843289,France
 Étampes,"(2.1614464, 48.4344621)",France,2.1614464,48.4344621,France
-L'Alpe d'Huez,"(6.0699443, 45.092401)",France,6.0699443,45.092401,France
 Alençon,"(0.0911374, 48.4312059)",France,0.0911374,48.4312059,France
 Waregem,"(3.4323622, 50.8868222)",België / Belgique / Belgien,3.4323622,50.8868222,Belgium
 Compiègne,"(2.8263171, 49.4179497)",France,2.8263171,49.4179497,France
