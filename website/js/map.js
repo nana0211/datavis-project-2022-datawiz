@@ -35,38 +35,37 @@ sidebar
         id: "stages",
         tab: '<i class="fa-solid fa-s"></i><i class="fa-solid fa-t"></i>',
         title: "Stages",
-        pane: '<p>This tab contains information on the stages for the selected edition'
+        pane: '<div id="stages_pane"></div>'
     })
 
 // add information tab
 fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/information_tab.html")
-  .then(response => response.text())
-  .then((data) => {
-    sidebar.addPanel({
-      id: "information",
-      tab: '<i class="fa-solid fa-circle-info"></id>',
-      title: "Information",
-      pane: data
-    })
-  }).then(
-    () => {
-      var coll = document.getElementsByClassName("inf_tab_collapsible");
+    .then(response => response.text())
+    .then((data) => {
+        sidebar.addPanel({
+            id: "information",
+            tab: '<i class="fa-solid fa-circle-info"></id>',
+            title: "Information",
+            pane: data
+        })
+    }).then(
+        () => {
+            var coll = document.getElementsByClassName("inf_tab_collapsible");
 
-      for (var i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.maxHeight) {
-                  content.style.maxHeight = null;
-              } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-              }
-          });
-      };
-    }
-  )
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            };
+        }
+    )
 
-sidebar.pa
 
 // be notified when a panel is opened
 sidebar.on("content", function(ev) {
@@ -78,14 +77,3 @@ sidebar.on("content", function(ev) {
             sidebar.options.autopan = false;
     }
 });
-
-var userid = 0;
-
-function addUser() {
-    sidebar.addPanel({
-        id: "user" + userid++,
-        tab: '<i class="fa fa-user"></i>',
-        title: "User Profile " + userid,
-        pane: "<p>user ipsum dolor sit amet</p>",
-    });
-}
