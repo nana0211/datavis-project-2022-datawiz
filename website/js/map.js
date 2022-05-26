@@ -31,7 +31,7 @@ sidebar
         pane: '<p style="padding-top: 1em;">This tab allows for edition selection and contains information on the currently selected edition.</p><div class="container py-4"><select id="edition_select" class="form-select" aria-label="Default select example"></select></div>',
     })
 // add stages tab
-fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/winner_tables/website/html/stage_tab.html")
+fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/stage_tab.html")
     .then(response => response.text())
     .then((data) => {
         sidebar.addPanel({
