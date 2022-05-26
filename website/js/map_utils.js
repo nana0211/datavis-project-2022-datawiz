@@ -1,3 +1,12 @@
+/* Define stage type colors */
+const type_to_color = new Map()
+type_to_color.set("Flat stage", "#03C700")
+type_to_color.set("Hilly stage", "#b300c7")
+type_to_color.set("Mountain stage", "#5d00c7")
+type_to_color.set("High mountain stage", "#c79c00")
+type_to_color.set("Individual time trial", "#00b3c7")
+type_to_color.set("Team time trial", "#004bf7")
+
 //On each map movement, this function is called to update the positions of the D3.js elements
 function update() {
 
@@ -272,12 +281,3 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
                 .text("Finish")
         });
 }
-
-/* Define stage type colors */
-const type_to_color = new Map()
-type_to_color.set("Flat stage", "#03C700")
-type_to_color.set("Mountain stage", "#5d00c7")
-type_to_color.set("Individual time trial", "#00b3c7")
-type_to_color.set("Team time trial", "#007bc7")
-type_to_color.set("Hilly stage", "#b300c7")
-type_to_color.set("High mountain stage", "#c79c00")

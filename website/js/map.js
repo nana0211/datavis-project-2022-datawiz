@@ -54,7 +54,7 @@ fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-proj
         })
     })
 
-    // add information tab
+// add information tab
 fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/information_tab.html")
     .then(response => response.text())
     .then((data) => {
@@ -100,7 +100,6 @@ var legend = L.control({ position: "bottomright" });
 
 legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
-    div.innerHTML += "<h4>Legend</h4>";
     type_to_color.forEach((value, key, _) => {
         div.innerHTML += '<i style="background: '+value+'"></i><span>'+key+'</span><br>'
     });
