@@ -30,7 +30,7 @@ var sidebar = L.control
     .open("home");
 
 // Add editions tab
-fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/work-jonas-refactoring/website/html/tab_edition.html")
+fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/tab_edition.html")
     .then(response => response.text())
     .then((data) => {
         sidebar.addPanel({
@@ -50,7 +50,7 @@ fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-proj
     })
     
 // Add stage tab
-fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/work-jonas-refactoring/website/html/tab_stage.html")
+fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/tab_stage.html")
     .then(response => response.text())
     .then((data) => {
         sidebar.addPanel({
@@ -62,7 +62,7 @@ fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-proj
     })
 
 // Add information tab
-fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/work-jonas-refactoring/website/html/tab_information.html")
+fetch("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/website/html/tab_information.html")
     .then(response => response.text())
     .then((data) => {
         sidebar.addPanel({
