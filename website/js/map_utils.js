@@ -100,6 +100,16 @@ function get_markers_links_and_jumps_of_year(selected_edition, stages, locations
 var linkGen = d3.linkHorizontal();
 var strokeWidth = 6;
 
+function reset_all_paths_states() {
+    d3.selectAll("path").attr("stroke", function() {
+        var color = d3.select(this).attr("original_color")
+        if (color) {
+            return color
+        }
+        return "black"
+    }).attr("clicked", false)
+}
+
 function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
 
     d3.select("#map").select("svg").selectAll("*").remove();
@@ -131,6 +141,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
         }).attr("pointer-events", "visiblePainted")
         .attr("class", "leaflet-interactive stage_link")
         .attr("clicked", false)
+        /* enable color change on hover */
         .on("mouseover", function() {
             if (d3.select(this).attr("clicked") == "false") {
                 d3.select(this).attr("stroke", pSBC(0.5, d3.select(this).attr("stroke")))
@@ -142,21 +153,17 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
             }
 
         })
+        /* enable stage selection by clicking on paths */
         .on("click", function() {
-            d3.selectAll("path").attr("stroke", function() {
-                var color = d3.select(this).attr("original_color")
-                if (color) {
-                    return color
-                }
-                return "black"
-            }).attr("clicked", false)
+            reset_all_paths_states()
             d3.select(this).attr("clicked", true)
             d3.select(this).attr("stroke", pSBC(0.5, d3.select(this).attr("stroke")))
             sidebar.open("stages")
             selected_stage = selected_edition_stages.filter(stage => {
                 return stage.stage == d3.select(this).attr("stage_id");
             })[0]
-            fill_winner_table(selected_stage.date.slice(0, 4), selected_stage.stage)
+            document.getElementById("stage_select").value = selected_stage.stage
+            fill_stage_result_table(selected_stage.date.slice(0, 4), selected_stage.stage)
         })
 
 
@@ -180,6 +187,7 @@ function draw_markers_links_and_jumps_on_map(markers, links, jumps) {
         .attr("class", "stage_link");
 
 
+    // add stage end points
     d3.select("#map")
         .select("svg")
         .selectAll("markers")
