@@ -33,7 +33,8 @@ function fill_stage_result_information(year, stage) {
     selected_stage_information = tdf_stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
     })
-    var starting_date = document.getElementById("stage_date");
+    var starting_date;
+    /*
     var distance = document.getElementById("stage_distance") ;
     var type = document.getElementById("stage_type");
     var origin = document.getElementById("start_point") ;
@@ -48,6 +49,8 @@ function fill_stage_result_information(year, stage) {
     origin.innerHTML  = selected_stage_information.origin;
     finish.innerHTML  = selected_stage_data.destiation;
     /* get the winner country information*/
+    starting_date = year;
+    document.getElementById("stage_date").innerHTML = starting_date;
     winner_country = tdf_winners.filter(function (data) {
         return (data.nationality == selected_stage_information.winner_country)
     })
@@ -55,4 +58,5 @@ function fill_stage_result_information(year, stage) {
         return (data.country == winner_country)
     })
     winner.innerHTML = winner_flag + selected_stage_information.winner
+    document.getElementById("stage_date").innerHTML = selected_stage_information.date;
 }
