@@ -28,7 +28,7 @@ function init_edition_selection() {
         
         fill_edition_select(years, starting_year)
         changeEdition(starting_year)
-        fill_stage_result_information(starting_year,stages[0])
+        fill_stage_result_information(starting_year,1)
     });
 }
 
@@ -49,7 +49,6 @@ function changeEdition(edition_year) {
     })
     
     fill_stage_select(edition_year, stage_numbers)
-    fill_stage_result_information(edition_year,selected_stage)
     // Update stage change
     $('#stage_select').on('change', function() {
         // Update which results are displayed

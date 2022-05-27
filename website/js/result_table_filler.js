@@ -49,8 +49,8 @@ function fill_stage_result_information(year, stage) {
     origin.innerHTML  = selected_stage_information.origin;
     finish.innerHTML  = selected_stage_data.destiation;
     /* get the winner country information*/
-    starting_date = year;
-    document.getElementById("stage_date").innerHTML = 1999;
+    starting_date = year + selected_stage_information.year;
+    document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
     winner_country = tdf_winners.filter(function (data) {
         return (data.nationality == selected_stage_information.winner_country)
     })
@@ -58,5 +58,4 @@ function fill_stage_result_information(year, stage) {
         return (data.country == winner_country)
     })
     winner.innerHTML = winner_flag + selected_stage_information.winner
-    document.getElementById("stage_date").innerHTML = selected_stage_information.date;
 }
