@@ -34,11 +34,14 @@ function fill_stage_result_information(year, stage) {
         return (data.year == year) && (data.stage == stage)
     })
     var starting_date = document.getElementById("stage_date");
+
     var distance = document.getElementById("stage_distance") ;
     var type = document.getElementById("stage_type");
     var origin = document.getElementById("start_point") ;
     var finish = document.getElementById("end_point");
     var winner = document.getElementById("winner");
+    document.getElementById("stage_date").innerHTML = selected_stage_information.date;
+    document.getElementById("stage_distance").innerHTML = 10;
     starting_date.innerHTML  = selected_stage_information.date;
     distance.innerHTML  = selected_stage_information.distance_km;
     type.innerHTML  = selected_stage_information.type
