@@ -30,7 +30,7 @@ function fill_stage_result_table(year, stage_number) {
 }
 
 
-function fill_stage_result_information(year, stage,stages) {
+function fill_stage_result_information(year, stage) {
   
     selected_stage_information = stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
@@ -51,11 +51,12 @@ function fill_stage_result_information(year, stage,stages) {
     origin.innerHTML  = selected_stage_information.origin;
     finish.innerHTML  = selected_stage_data.destiation;
     /* get the winner country information*/
-    selected_stage_information = tdf_stages.filter(function (data) {
+    selected_stage_information = stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
     })
     starting_date = selected_stage_information.year;
     document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
+    document.getElementById("stage_date").value = ("Level: " + starting_date);
     /*
 
     document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
