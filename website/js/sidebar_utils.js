@@ -39,16 +39,16 @@ function changeEdition(edition_year) {
     var jumps = markers_links_jumps[2]
 
     draw_map_elements(markers, links, jumps)
-
+    
     var stage_numbers = new Set()
     stages.forEach(stage => {
         if (stage.year == edition_year) {
             stage_numbers.add(stage.stage)
         }
     })
-
+    
     fill_stage_select(edition_year, stage_numbers)
-     
+    fill_stage_result_information(edition_year,selected_stage)
     // Update stage change
     $('#stage_select').on('change', function() {
         // Update which results are displayed
