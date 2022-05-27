@@ -28,3 +28,28 @@ function fill_stage_result_table(year, stage_number) {
         table.row.add([stage_data.rank, stage_data.rider, stage_data.team, format_seconds(stage_data.time_sec), "+ " + format_seconds(stage_data.time_gap_to_winner_sec)]).draw(false);
     });
 }
+
+function fill_stage_result_information(year, stage) {
+    selected_stage_information = tdf_stages.filter(function (data) {
+        return (data.year == year) && (data.stage == stage)
+    })
+    var starting_date = document.getElementById("stage_date");
+    var distance = document.getElementById("stage_distance") ;
+    var type = document.getElementById("stage_type");
+    var origin = document.getElementById("start_point") ;
+    var finish = document.getElementById("end_point");
+    var winner = document.getElementById("winner");
+    starting_date.innerHTML  = selected_stage_data.date;
+    distance.innerHTML  = selected_stage_data.distance_km;
+    type.innerHTML  = selected_stage_data.type
+    origin.innerHTML  = selected_stage_data.origin;
+    finish.innerHTML  = selected_stage_data.destination;
+    /* get the winner country information*/
+    winner_country = tdf_winners.filter(function (data) {
+        return (data.nationality == selected_stage_data.winner)
+    })
+    winner_flag = flags.filter(function (data) {
+        return (data.country == winner_country)
+    })
+    winner.innerHTML = winner_flag + selected_stage_data.winner
+}

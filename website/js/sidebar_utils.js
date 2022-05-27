@@ -54,7 +54,7 @@ function changeEdition(edition_year) {
         // Update which results are displayed
         var selected_stage = $(this).val();
         fill_stage_result_table(edition_year, selected_stage)
-
+        fill_stage_result_information(edition_year,selected_stage)
         // Update which path is higlighted
         reset_all_paths_states()
         var link = d3.selectAll(".leaflet-interactive.stage_link")
