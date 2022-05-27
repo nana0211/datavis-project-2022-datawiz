@@ -50,7 +50,7 @@ function fill_stage_result_information(year, stage) {
     finish.innerHTML  = selected_stage_data.destiation;
     /* get the winner country information*/
     starting_date = year;
-    document.getElementById("stage_date").innerHTML = starting_date;
+    document.getElementById("stage_date").innerHTML = 1999;
     winner_country = tdf_winners.filter(function (data) {
         return (data.nationality == selected_stage_information.winner_country)
     })
