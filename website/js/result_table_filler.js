@@ -49,7 +49,8 @@ function fill_stage_result_information(year,stage) {
     /* get the winner country information*/
     selected_stage_information = stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
-    })
+    }).date
+    console.log(selected_stage_information);
     starting_date.innerHTML = ("Level: " + stage + selected_stage_information.year);
     starting_date.value = ("Level: " + stage + selected_stage_information.year);
     /*

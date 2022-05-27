@@ -46,7 +46,6 @@ fetch("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/m
         $('#edition_select').on('change', function() {
             var selected_edition = $(this).val();
             changeEdition(selected_edition);
-            fill_stage_result_information(starting_year,2)
         });
     })
     
