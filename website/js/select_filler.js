@@ -31,7 +31,6 @@ function fill_stage_select(edition_year, stage_numbers) {
     });
 
     stage_select.value = stage_numbers[0]
-
     fill_stage_result_table(edition_year, stage_numbers[0])
-    fill_stage_result_information(edition_year,stage_numbers[0])
+    fill_stage_result_information(edition_year, stage_numbers[0])
 }
