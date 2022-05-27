@@ -56,7 +56,7 @@ function fill_stage_result_information(year, stage) {
     })
     starting_date = selected_stage_information.year;
     document.getElementById("stage_date").innerHTML = ("Level: " + stage + starting_date);
-    document.getElementById("stage_date").value = ("Level: " + starting_date);
+    document.getElementById("stage_date").value = ("Level: " + stage + sstarting_date);
     /*
 
     document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
