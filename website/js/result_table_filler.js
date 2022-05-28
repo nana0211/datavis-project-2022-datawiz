@@ -49,8 +49,10 @@ function fill_stage_result_information(year,stage) {
     origin.innerHTML  = selected_stage_information.origin;
     finish.innerHTML  = selected_stage_data.destiation;
     /* get the winner country information*/
-    selected_stage_information = stages.filter(function (data) {
+    d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/tdf_stages.csv", function(csv) {
+    selected_stage_information = csv.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
+        })
     });
     console.log(selected_stage_information);
     starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information.date);
