@@ -34,6 +34,7 @@ function fill_stage_result_table(year, stage_number) {
 function fill_stage_result_information(year,stage) {
     var starting_date = document.getElementById("stage_date");
     var distance = document.getElementById("stage_distance");
+    var selected_stage_information;
     /*
     var distance = document.getElementById("stage_distance") ;
     var type = document.getElementById("stage_type");
@@ -53,7 +54,7 @@ function fill_stage_result_information(year,stage) {
     selected_stage_information = csv.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
         })
-    });
+    })
     console.log(selected_stage_information);
     starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information.date);
     distance.innerHTML = ("Distance: " + year + selected_stage_information.date);
