@@ -29,7 +29,6 @@ function init_edition_selection() {
         
         fill_edition_select(years, starting_year)
         changeEdition(starting_year)
-        fill_stage_result_information(starting_year,2)
     });
 }
 
@@ -57,10 +56,6 @@ function changeEdition(edition_year) {
         var selected_stage = $(this).val();
         fill_stage_result_table(edition_year, selected_stage)
         fill_stage_result_information(edition_year, selected_stage)
-
-        document.getElementById("stage_date").innerHTML = stages.filter(function (data) {
-            return (data.year == edition_year) && (data.stage == selected_stage)
-        }).date
         // Update which path is higlighted
         reset_all_paths_states()
         var link = d3.selectAll(".leaflet-interactive.stage_link")
