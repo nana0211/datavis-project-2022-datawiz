@@ -27,11 +27,13 @@ function fill_stage_result_table(year, stage_number) {
     selected_stage_data.forEach(stage_data => {
         table.row.add([stage_data.rank, stage_data.rider, stage_data.team, format_seconds(stage_data.time_sec), "+ " + format_seconds(stage_data.time_gap_to_winner_sec)]).draw(false);
     });
+
 }
 
 
 function fill_stage_result_information(year,stage) {
     var starting_date = document.getElementById("stage_date");
+    var distance = document.getElementById("stage_distance");
     /*
     var distance = document.getElementById("stage_distance") ;
     var type = document.getElementById("stage_type");
@@ -53,6 +55,7 @@ function fill_stage_result_information(year,stage) {
     console.log(selected_stage_information);
     starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information.date);
     starting_date.value = ("Level: " + stage + selected_stage_information.date);
+    distance.innerHTML = ("Distance: " + year + selected_stage_information.date);
     /*
 
     document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
