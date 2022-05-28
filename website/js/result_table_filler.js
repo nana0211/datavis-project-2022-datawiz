@@ -54,7 +54,6 @@ function fill_stage_result_information(year,stage) {
     });
     console.log(selected_stage_information);
     starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information.date);
-    starting_date.value = ("Level: " + stage + selected_stage_information.date);
     distance.innerHTML = ("Distance: " + year + selected_stage_information.date);
     /*
 
