@@ -31,38 +31,14 @@ function fill_stage_result_table(year, stage_number) {
 }
 
 
-function fill_stage_result_information(year,stage) {
+function fill_stage_result_information(year,stage,stages) {
     var starting_date = document.getElementById("stage_date");
     var distance = document.getElementById("stage_distance");
-    /*
-    var distance = document.getElementById("stage_distance") ;
-    var type = document.getElementById("stage_type");
-    var origin = document.getElementById("start_point") ;
-    var finish = document.getElementById("end_point");
-    var winner = document.getElementById("winner");
-    document.getElementById("stage_date").innerHTML = selected_stage_information.date;
-    document.getElementById("stage_date").innerHTML = 0819;
-    document.getElementById("stage_distance").innerHTML = 10;
-    starting_date.innerHTML  = selected_stage_information.date;
-    distance.innerHTML  = selected_stage_information.distance_km;
-    type.innerHTML  = selected_stage_information.type
-    origin.innerHTML  = selected_stage_information.origin;
-    finish.innerHTML  = selected_stage_data.destiation;
-    /* get the winner country information*/
+   
     selected_stage_information = stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
     })
-    console.log(selected_stage_information);
     starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information.date);
     distance.innerHTML = ("Distance: " + year + selected_stage_information.date);
-    /*
-
-    document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
-    winner_country = tdf_winners.filter(function (data) {
-        return (data.nationality == selected_stage_information.winner_country)
-    })
-    winner_flag = flags.filter(function (data) {
-        return (data.country == winner_country)
-    })
-    winner.innerHTML = winner_flag + selected_stage_information.winner*/
+   
 }
