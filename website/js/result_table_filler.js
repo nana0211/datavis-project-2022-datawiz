@@ -52,9 +52,9 @@ function fill_stage_result_information(year,stage) {
     selected_stage_information = stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
     })
-    console.log(selected_stage_information);
-    starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information.date);
-    distance.innerHTML = ("Distance: " + year + selected_stage_information.date);
+    console.log(selected_stage_information[0]);
+    starting_date.innerHTML = ("Start Date: " + stage + selected_stage_information[0].date);
+    distance.innerHTML = ("Distance: " + year + selected_stage_information[0].date);
     /*
 
     document.getElementById("stage_date").innerHTML = ("Level: " + starting_date);
