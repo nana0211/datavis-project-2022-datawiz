@@ -31,7 +31,7 @@ function fill_stage_result_table(year, stage_number) {
 }
 
 
-function fill_stage_result_information(year,stage,stages) {
+function fill_stage_result_information(year,stage) {
     var starting_date = document.getElementById("stage_date");
     var distance = document.getElementById("stage_distance");
    
