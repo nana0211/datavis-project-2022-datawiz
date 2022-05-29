@@ -46,7 +46,7 @@ function fill_stage_result_information(year,stage) {
     distance.innerHTML = ("Distance: " +  selected_stage_information[0].distance_km + 'km');
     type.innerHTML  = ("Stage Type: " +  selected_stage_information[0].type);
     origin.innerHTML  =  ("Starting point: " + selected_stage_information[0].origin);
-    finish.innerHTML  = ("End point: " + selected_stage_data.destiation);
+    finish.innerHTML  = ("End point: " + selected_stage_information[0].destination);
 
     winner_country = tdf_winners.filter(function (data) {
         return (data.nationality == selected_stage_information.winner_country)
@@ -54,5 +54,5 @@ function fill_stage_result_information(year,stage) {
     winner_flag = flags.filter(function (data) {
         return (data.country == winner_country)
     })
-    winner.innerHTML = winner_flag + selected_stage_information[0].winner
+    winner.innerHTML = ("Winner: "+ winner_flag + selected_stage_information[0].winner)
 }
