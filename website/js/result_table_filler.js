@@ -49,10 +49,10 @@ function fill_stage_result_information(year,stage) {
     finish.innerHTML  = ("End point: " + selected_stage_information[0].destination);
 
     winner_country = winners.filter(function (data) {
-        return (data.nationality == selected_stage_information[0].winner_country)
+        return (data.winner_name == selected_stage_information[0].winner)
     })
     winner_flag = flags.filter(function (data) {
-        return (data.country == winner_country[0])
+        return (data.country == winner_country[0].nationality)
     })
     winner.innerHTML = ("Winner: "+ winner_flag[0] + selected_stage_information[0].winner)
 }
