@@ -9,17 +9,21 @@
 var stages;
 var locations;
 var stage_data;
-
+var winners;
+var flags;
 function init_edition_selection() {
     Promise.all([
         d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/locations.csv"),
         d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/tdf_stages.csv"),
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/stage_data.csv")
+        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/stage_data.csv"),
+        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/tdf_winners.csv"),
+        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/flags.csv"),
     ]).then(function(initialize) {
         locations = initialize[0];
         stages = initialize[1]
         stage_data = initialize[2]
-    
+        winners = initialize[3]
+        flags = initialize[4]
         const years = new Set()
         stages.forEach(stage => {
             years.add(stage.year);

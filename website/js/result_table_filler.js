@@ -43,16 +43,16 @@ function fill_stage_result_information(year,stage) {
         return (data.year == year) && (data.stage == stage)
     })
     starting_date.innerHTML = ("Start Date: " +  selected_stage_information[0].date);
-    distance.innerHTML = ("Distance: " +  selected_stage_information[0].distance_km + 'km');
+    distance.innerHTML = ("Distance: " +  selected_stage_information[0].distance_km + ' km');
     type.innerHTML  = ("Stage Type: " +  selected_stage_information[0].type);
     origin.innerHTML  =  ("Starting point: " + selected_stage_information[0].origin);
     finish.innerHTML  = ("End point: " + selected_stage_information[0].destination);
 
-    winner_country = tdf_winners.filter(function (data) {
-        return (data.nationality == selected_stage_information.winner_country)
+    winner_country = winners.filter(function (data) {
+        return (data.nationality == selected_stage_information[0].winner_country)
     })
     winner_flag = flags.filter(function (data) {
-        return (data.country == winner_country)
+        return (data.country == winner_country[0])
     })
-    winner.innerHTML = ("Winner: "+ winner_flag + selected_stage_information[0].winner)
+    winner.innerHTML = ("Winner: "+ winner_flag[0] + selected_stage_information[0].winner)
 }
