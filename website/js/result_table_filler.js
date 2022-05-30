@@ -38,7 +38,7 @@ function fill_stage_result_information(year,stage) {
     var origin = document.getElementById("start_point");
     var finish = document.getElementById("end_point");
     var winner_ = document.getElementById("winner");
-    var winner_country_ = document.getElementById('winner_country');
+    var winner_country_ = document.getElementById("winner_country");
     selected_stage_information = stages.filter(function (data) {
         return (data.year == year) && (data.stage == stage)
     })
@@ -48,6 +48,7 @@ function fill_stage_result_information(year,stage) {
     origin.innerHTML  =  ("Starting point: " + selected_stage_information[0].origin);
     finish.innerHTML  = ("End point: " + selected_stage_information[0].destination);
     winner_.innerHTML = ("Winner: " + selected_stage_information[0].winner);
+    
     winner_country = winners.filter(function (data) {
         return (data.winner_name == selected_stage_information[0].winner)
     })
