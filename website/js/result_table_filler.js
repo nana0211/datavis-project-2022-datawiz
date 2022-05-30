@@ -52,7 +52,7 @@ function fill_stage_result_information(year,stage) {
     winner_country = winners.filter(function (data) {
         return (data.winner_name == selected_stage_information[0].winner)
     })
-    winner_country_.innerHTML= ("WinnerCountry : " + winner_country[0].nationality);
+    winner_country_.innerHTML= ("WinnerCountry: " + winner_country[0].nationality);
 }
 
 function calculator (someArray){
@@ -70,15 +70,15 @@ function fill_edition_result_information(year) {
     var total_length = document.getElementById("total_length");
     var num_of_starters = document.getElementById("num_of_starters");
     var num_of_teams = document.getElementById("num_of_teams");
-    var number_of_stages = []
+    var number_of_stages = new Set()
     edition_stats = history.filter(function (data) {
         return (data.year == year)
     })
     edition_stats.forEach(edition_stat => {
-        number_of_stages.append(edition_stat.number_of_stages)
+        number_of_stages.add(edition_stat.number_of_stages)
     })
   
-    edition_date.innerHTML = ("Edition date: " +  edition_stats[0].date);
+    edition_date.innerHTML = ("Edition date: " +  edition_stats[0].size);
     num_of_stages.innerHTML = ("Numbers of stages: " +  calculator(num_of_stages));
     /*
     edition_distance.innerHTML  = ("Edition Distance: " +  selected_stage_information[0].type);
