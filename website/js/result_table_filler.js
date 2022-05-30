@@ -54,5 +54,5 @@ function fill_stage_result_information(year,stage) {
     winner_flag = flags.filter(function (data) {
         return (data.country == winner_country[0].nationality)
     })
-    winner.innerHTML = ("Winner: "+ winner_country + selected_stage_information[0].winner)
+    winner.innerHTML = ("Winner: "+ winner_country[0].nationality + selected_stage_information[0].winner)
 }
