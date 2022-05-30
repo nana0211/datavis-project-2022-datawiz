@@ -56,3 +56,36 @@ function fill_stage_result_information(year,stage) {
     })
     winner.innerHTML = ("Winner: "+ winner_flag[0].flag_symbol + selected_stage_information[0].winner)
 }
+
+function calculator (someArray){
+    return someArray.reduce((howMuchSoFar,currentElementOfTheArray) => {
+      howMuchSoFar = howMuchSoFar + currentElementOfTheArray;
+      return howMuchSoFar;
+    });
+}
+  
+function fill_edition_result_information(year) {
+
+    var edition_date = document.getElementById("edition_date");
+    var num_of_stages = document.getElementById("num_of_stages");
+    var edition_distance = document.getElementById("edition_distance");
+    var total_length = document.getElementById("total_length");
+    var num_of_starters = document.getElementById("num_of_starters");
+    var num_of_teams = document.getElementById("num_of_teams");
+    var number_of_stages = []
+    edition_stats = history.filter(function (data) {
+        return (data.year == year)
+    })
+    edition_stats.forEach(edition_stat => {
+        number_of_stages.append(edition_stat.number_of_stages)
+    });
+
+   
+    edition_date.innerHTML = ("Edition date: " +  edition_stats[0].date);
+    num_of_stages.innerHTML = ("Numbers of stages: " +  calculator(num_of_stages));
+    /*
+    edition_distance.innerHTML  = ("Edition Distance: " +  selected_stage_information[0].type);
+    total_length.innerHTML  =  ("Total Length: " + selected_stage_information[0].origin);
+    num_of_starters.innerHTML  = ("Number of starters " + selected_stage_information[0].destination);*/
+}
+
