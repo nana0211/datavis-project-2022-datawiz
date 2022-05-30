@@ -37,7 +37,7 @@ function init_edition_selection() {
         fill_edition_select(years, starting_year)
         changeEdition(starting_year)
         fill_stage_result_information(edition_year, 1)
-        fill_edition_result_information(edition_year)
+        /*fill_edition_result_information(edition_year)*/
     });
 }
 

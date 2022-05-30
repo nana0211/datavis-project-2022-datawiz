@@ -78,9 +78,8 @@ function fill_edition_result_information(year) {
     })
     edition_stats.forEach(edition_stat => {
         number_of_stages.append(edition_stat.number_of_stages)
-    });
-
-   
+    })
+  
     edition_date.innerHTML = ("Edition date: " +  edition_stats[0].date);
     num_of_stages.innerHTML = ("Numbers of stages: " +  calculator(num_of_stages));
     /*
