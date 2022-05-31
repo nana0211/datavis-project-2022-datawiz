@@ -60,7 +60,7 @@ function changeEdition(edition_year) {
     fill_edition_result_information(edition_year)
     fill_stage_select(edition_year, stage_numbers)
     fill_stage_result_information(edition_year, 1)
-    fill_edition_result_table(starting_year)
+    fill_edition_result_table(edition_year)
     // Update stage change
     $('#stage_select').on('change', function() {
         // Update which results are displayed
