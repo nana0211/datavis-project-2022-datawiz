@@ -39,7 +39,7 @@ function fill_edition_result_table(year) {
 
     table.clear();
     selected_edition_data.forEach(edition_data => {
-        table.row.add([edition_data.rank, edition_data.rider, edition_data.team, format_seconds(edition_data.time_sec), "+ " + format_seconds(sedition_data.time_gap_to_winner_sec)]).draw(false);
+        table.row.add([edition_data.rank, edition_data.rider, edition_data.distance_km, format_seconds(edition_data.time_sec), "+ " + format_seconds(edition_data.time_gap_to_winner_sec)]).draw(false);
     });
 
 }
