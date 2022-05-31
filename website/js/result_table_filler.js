@@ -83,6 +83,7 @@ function fill_edition_result_information(year){
     var edition_end = document.getElementById("edition_end");
     var num_of_stages = document.getElementById("num_of_stages");
     var edition_distance = document.getElementById("edition_distance");
+    var total_riders = document.getElementById("total_riders");
     var total_teams = document.getElementById("total_teams");
     var number_of_stages = new Set()
     var dates = new Set()
@@ -111,8 +112,8 @@ function fill_edition_result_information(year){
     })
     selected_stage_data.forEach(select_date => {
     teams.add(select_date.team)
+    starters.add(select_date.rider)
     })  
+    total_riders.innerHTML = ("Total Starters: " +  starters.size);
     total_teams.innerHTML = ("Total teams: " +  teams.size);
-
-
 }
