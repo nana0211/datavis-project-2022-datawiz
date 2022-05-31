@@ -78,15 +78,18 @@ function fill_edition_result_information(year) {
     var num_of_starters = document.getElementById("num_of_starters");
     var num_of_teams = document.getElementById("num_of_teams");
     var number_of_stages = new Set()
-    edition_stats = history.filter(function (data) {
+    var dates = new Set()
+
+    edition_stats = stages.filter(function (data) {
         return (data.year == year)
     })
     edition_stats.forEach(edition_stat => {
-        number_of_stages.add(edition_stat.number_of_stages)
+        number_of_stages.add(edition_stat.stage)
+        dates.add(edition_stat.date)
     })
   
-    edition_date.innerHTML = ("Edition date: " +  edition_stats[0].size);
-    num_of_stages.innerHTML = ("Numbers of stages: " +  calculator(num_of_stages));
+    edition_date.innerHTML = ("Edition date: " +  dates[0]);
+    num_of_stages.innerHTML = ("Numbers of stages: " +  Array.from(number_of_stages).pop());
     /*
     edition_distance.innerHTML  = ("Edition Distance: " +  selected_stage_information[0].type);
     total_length.innerHTML  =  ("Total Length: " + selected_stage_information[0].origin);
