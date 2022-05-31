@@ -80,6 +80,7 @@ function fill_edition_result_information(year){
     var num_of_teams = document.getElementById("num_of_teams");
     var number_of_stages = new Set()
     var dates = new Set()
+    var distances = new Set()
 
     edition_stats = stages.filter(function (data) {
         return (data.year == year)
@@ -87,14 +88,13 @@ function fill_edition_result_information(year){
     edition_stats.forEach(edition_stat => {
         number_of_stages.add(edition_stat.stage)
         dates.add(edition_stat.date)
+        distance.add(edition_stat.distance_km)
     })
   
     edition_date.innerHTML = ("Edition date: " +  dates.values().next().value);
     edition_end.innerHTML = ("End of edition: " +  Array.from(dates).pop());
     num_of_stages.innerHTML = ("Numbers of stages: " +  Array.from(number_of_stages).pop());
-    /*
-    edition_distance.innerHTML  = ("Edition Distance: " +  selected_stage_information[0].type);
-    total_length.innerHTML  =  ("Total Length: " + selected_stage_information[0].origin);
-    num_of_starters.innerHTML  = ("Number of starters " + selected_stage_information[0].destination);*/
+    
+    edition_distance.innerHTML  = ("Edition Total Distance: " +  calculator(Array.from(distances)));
 }
 
