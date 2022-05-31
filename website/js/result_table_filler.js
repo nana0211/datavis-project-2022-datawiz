@@ -69,9 +69,10 @@ function calculator (someArray){
     });
 }
   
-function fill_edition_result_information(year) {
+function fill_edition_result_information(year){
 
     var edition_date = document.getElementById("edition_date");
+    var edition_end = document.getElementById("edition_end");
     var num_of_stages = document.getElementById("num_of_stages");
     var edition_distance = document.getElementById("edition_distance");
     var total_length = document.getElementById("total_length");
@@ -88,7 +89,8 @@ function fill_edition_result_information(year) {
         dates.add(edition_stat.date)
     })
   
-    edition_date.innerHTML = ("Edition date: " +  dates[0]);
+    edition_date.innerHTML = ("Edition date: " +  dates.values().next().value);
+    edition_end.innerHTML = ("End of edition: " +  Array.from(dates).pop());
     num_of_stages.innerHTML = ("Numbers of stages: " +  Array.from(number_of_stages).pop());
     /*
     edition_distance.innerHTML  = ("Edition Distance: " +  selected_stage_information[0].type);
