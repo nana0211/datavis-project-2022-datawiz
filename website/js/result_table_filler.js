@@ -38,6 +38,7 @@ function fill_edition_result_table(year) {
     var table = $("#edition_result").DataTable();
 
     table.clear();
+    table.page("first")
     selected_edition_data.forEach(edition_data => {
         table.row.add([edition_data.rank, edition_data.rider, edition_data.distance_km, format_seconds(edition_data.time_sec), "+ " + format_seconds(edition_data.time_gap_to_winner_sec)]).draw(false);
     });
@@ -82,11 +83,12 @@ function fill_edition_result_information(year){
     var edition_end = document.getElementById("edition_end");
     var num_of_stages = document.getElementById("num_of_stages");
     var edition_distance = document.getElementById("edition_distance");
-
+    var total_teams = document.getElementById("total_teams");
     var number_of_stages = new Set()
     var dates = new Set()
     var distances = new Set()
-
+    var teams = new Set()
+    var starters = new Set()
     edition_stats = stages.filter(function (data) {
         return (data.year == year)
     })
@@ -94,11 +96,14 @@ function fill_edition_result_information(year){
         number_of_stages.add(edition_stat.stage);
         dates.add(edition_stat.date);
         distances.add(parseInt(edition_stat.distance_km));
+        teams.add(edition_stat.team)
+        starters.add(edition_stat.rider)
     })
-  
+   
     edition_date.innerHTML = ("Edition date: " +  dates.values().next().value);
     edition_end.innerHTML = ("End of edition: " +  Array.from(dates).pop());
     num_of_stages.innerHTML = ("Numbers of stages: " +  Array.from(number_of_stages).pop());
     sum_distance =  Array.from(distances).reduce((a, b) => a + b, 0)
-    edition_distance.innerHTML  = ("Edition Total Distance: " +  sum_distance);
+    edition_distance.innerHTML  = ("Total Distance: " +  sum_distance +' km');
+
 }

@@ -38,6 +38,7 @@ function init_edition_selection() {
         fill_edition_result_information(starting_year)
         fill_edition_result_table(starting_year)
         changeEdition(starting_year)
+        callback()
     });
 }
 
