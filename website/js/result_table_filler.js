@@ -106,4 +106,13 @@ function fill_edition_result_information(year){
     sum_distance =  Array.from(distances).reduce((a, b) => a + b, 0)
     edition_distance.innerHTML  = ("Total Distance: " +  sum_distance +' km');
 
+    selected_stage_data = stage_data.filter(function (data) {
+        return (data.year == year) 
+    })
+    selected_stage_data.forEach(select_date => {
+    teams.add(select_date.team)
+    })  
+    total_teams.innerHTML = ("Total teams: " +  teams.size);
+
+
 }
