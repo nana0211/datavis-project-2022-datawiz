@@ -31,6 +31,20 @@ function fill_stage_result_table(year, stage_number) {
 }
 
 
+function fill_edition_result_table(year) {
+    selected_edition_data = history.filter(function (data) {
+        return (data.year == year)
+    })
+    var table = $("#edition_result").DataTable();
+
+    table.clear();
+    selected_edition_data.forEach(edition_data => {
+        table.row.add([edition_data.rank, edition_data.rider, edition_data.team, format_seconds(edition_data.time_sec), "+ " + format_seconds(sedition_data.time_gap_to_winner_sec)]).draw(false);
+    });
+
+}
+
+
 function fill_stage_result_information(year,stage) {
 
     var starting_date = document.getElementById("stage_date");
@@ -95,4 +109,3 @@ function fill_edition_result_information(year){
     sum_distance =  Array.from(distances).reduce((a, b) => a + b, 0)
     edition_distance.innerHTML  = ("Edition Total Distance: " +  sum_distance);
 }
-

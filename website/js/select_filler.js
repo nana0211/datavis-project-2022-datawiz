@@ -17,6 +17,7 @@ function fill_edition_select(years, selected) {
 
     edition_select.value = selected
     fill_edition_result_information(years[0])
+    fill_edition_result_table(years[0])
 }
 
 function fill_stage_select(edition_year, stage_numbers) {
