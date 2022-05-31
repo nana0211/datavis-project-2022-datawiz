@@ -32,6 +32,7 @@ function fill_stage_result_table(year, stage_number) {
 
 
 function fill_stage_result_information(year,stage) {
+
     var starting_date = document.getElementById("stage_date");
     var distance = document.getElementById("stage_distance");
     var type = document.getElementById("stage_type");
@@ -53,12 +54,13 @@ function fill_stage_result_information(year,stage) {
     winner_country = winners.filter(function (data) {
         return (data.winner_name == selected_stage_information[0].winner)
     })
-    /*issue1 this winner country does not update accordingly*/
-    winner_country_.innerHTML= ("WinnerCountry: " + winner_country[0].nationality);
-
     winner_flag = flags.filter(function (data) {
         return (data.country == winner_country[0].nationality)
     })
+    /*issue1 this winner country does not update accordingly*/
+    winner_country_.innerHTML= ("WinnerCountry: " + winner_country[0].nationality);
+
+   
     flag.innerHTML = ("Country_flag: " + winner_flag[0].flag_symbol);
 }
 

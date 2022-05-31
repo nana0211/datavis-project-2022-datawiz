@@ -14,12 +14,12 @@ var flags;
 var history;
 function init_edition_selection() {
     Promise.all([
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/locations.csv"),
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/tdf_stages.csv"),
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/stage_data.csv"),
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/tdf_winners.csv"),
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/flags.csv"),
-        d3.csv("https://raw.githubusercontent.com/com-480-data-visualization/datavis-project-2022-datawiz/master/data/TDF_Riders_History.csv"),
+        d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/locations.csv"),
+        d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/tdf_stages.csv"),
+        d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/stage_data.csv"),
+        d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/tdf_winners.csv"),
+        d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/flags.csv"),
+        d3.csv("https://raw.githubusercontent.com/nana0211/datavis-project-2022-datawiz/master/data/TDF_Riders_History.csv"),
     ]).then(function(initialize) {
         locations = initialize[0];
         stages = initialize[1]
