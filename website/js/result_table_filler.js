@@ -76,13 +76,6 @@ function fill_stage_result_information(year,stage) {
     /*flag.innerHTML = ("Country_flag: " + winner_flag[0].flag_symbol);*/
 }
 
-function calculator (someArray){
-    return someArray.reduce((howMuchSoFar,currentElementOfTheArray) => {
-      howMuchSoFar = howMuchSoFar + currentElementOfTheArray;
-      return howMuchSoFar;
-    });
-}
-  
 function fill_edition_result_information(year){
 
     var edition_date = document.getElementById("edition_date");
