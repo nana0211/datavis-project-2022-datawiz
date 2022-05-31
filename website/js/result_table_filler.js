@@ -93,7 +93,7 @@ function fill_edition_result_information(year){
     edition_stats.forEach(edition_stat => {
         number_of_stages.add(edition_stat.stage);
         dates.add(edition_stat.date);
-        distances.add(edition_stat.distance_km);
+        distances.add(parseInt(edition_stat.distance_km));
     })
   
     edition_date.innerHTML = ("Edition date: " +  dates.values().next().value);
