@@ -75,9 +75,7 @@ function fill_edition_result_information(year){
     var edition_end = document.getElementById("edition_end");
     var num_of_stages = document.getElementById("num_of_stages");
     var edition_distance = document.getElementById("edition_distance");
-    var total_length = document.getElementById("total_length");
-    var num_of_starters = document.getElementById("num_of_starters");
-    var num_of_teams = document.getElementById("num_of_teams");
+
     var number_of_stages = new Set()
     var dates = new Set()
     var distances = new Set()
@@ -94,7 +92,7 @@ function fill_edition_result_information(year){
     edition_date.innerHTML = ("Edition date: " +  dates.values().next().value);
     edition_end.innerHTML = ("End of edition: " +  Array.from(dates).pop());
     num_of_stages.innerHTML = ("Numbers of stages: " +  Array.from(number_of_stages).pop());
-    
-    edition_distance.innerHTML  = ("Edition Total Distance: " +  distances.reduce((a, b) => a + b, 0));
+
+    edition_distance.innerHTML  = ("Edition Total Distance: " +  Array.from(distances).reduce((a, b) => a + b, 0));
 }
 
