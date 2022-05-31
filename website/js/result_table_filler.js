@@ -92,7 +92,7 @@ function fill_edition_result_information(year){
     edition_date.innerHTML = ("Edition date: " +  dates.values().next().value);
     edition_end.innerHTML = ("End of edition: " +  Array.from(dates).pop());
     num_of_stages.innerHTML = ("Numbers of stages: " +  Array.from(number_of_stages).pop());
-
-    edition_distance.innerHTML  = ("Edition Total Distance: " +  Array.from(distances).reduce((a, b) => a + b, 0));
+    sum_distance =  Array.from(distances).reduce((a, b) => a + b, 0)
+    edition_distance.innerHTML  = ("Edition Total Distance: " +  sum_distance);
 }
 
